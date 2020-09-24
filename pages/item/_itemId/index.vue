@@ -295,6 +295,11 @@ import {
 } from '@jellyfin/client-axios';
 import imageHelper from '~/mixins/imageHelper';
 
+interface MoreOptions {
+  title: string;
+  name: string;
+}
+
 export default Vue.extend({
   mixins: [imageHelper],
   data() {
@@ -309,7 +314,9 @@ export default Vue.extend({
       audioTracks: [] as MediaStream[],
       currentAudioTrack: {} as MediaStream,
       subtitleTracks: [] as MediaStream[],
-      currentSubtitleTrack: {} as MediaStream
+      currentSubtitleTrack: {} as MediaStream,
+      moreOptions: [] as MoreOptions[],
+      identifyDialog: false
     };
   },
   computed: {
@@ -412,6 +419,29 @@ export default Vue.extend({
     ...mapActions('backdrop', ['setBackdrop', 'clearBackdrop']),
     getLanguageName(code: string) {
       return langs.where('2B', code).name;
+    },
+    /*
+     * returns an array of options for the 'more' button
+     */
+    getMoreOptions() {
+      if (this.$auth.user.Policy.IsAdministrator) {
+        this.moreOptions.push({
+          title: this.$t('identify').toString(),
+          name: 'identify'
+        });
+      }
+    },
+    /*
+     * Opens/closes the relevant dialog
+     */
+    openDialog(option: MoreOptions) {
+      switch (option.name) {
+        case 'identify':
+          this.identifyDialog = true;
+          break;
+        default:
+          break;
+      }
     },
     getSurroundIcon(layout: string) {
       switch (layout) {
