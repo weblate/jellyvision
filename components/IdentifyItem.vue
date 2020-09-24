@@ -18,16 +18,16 @@
     <v-checkbox v-model="replaceImages" label="Replace Existing Images" />
     <div>
       <v-card
-        v-for="item in items"
-        :key="item.ProviderIds.Imdb"
+        v-for="result in searchResults"
+        :key="result.ProviderIds.Imdb"
         class="mb-5"
-        @click="setItem(item)"
+        @click="setItem(result)"
       >
-        <v-img v-if="item.ImageUrl" :src="getSearchImage(item.ImageUrl)" />
-        <v-card-title>{{ item.Name }}</v-card-title>
-        <v-card-subtitle>{{ item.SearchProviderName }}</v-card-subtitle>
+        <v-img v-if="result.ImageUrl" :src="getSearchImage(result.ImageUrl)" />
+        <v-card-title>{{ result.Name }}</v-card-title>
+        <v-card-subtitle>{{ result.SearchProviderName }}</v-card-subtitle>
       </v-card>
-      <v-card v-if="!items">
+      <v-card v-if="!searchResult">
         <v-card-title>{{ $t('noItemsFound') }}</v-card-title>
         <v-card-sub-title>{{ $t('widenQuery') }}</v-card-sub-title>
       </v-card>
@@ -42,7 +42,7 @@ import { BaseItemDto, RemoteSearchResult } from '~/api/api';
 export default Vue.extend({
   props: {
     item: {
-      type: BaseItemDto,
+      type: Object as () => BaseItemDto,
       required: true,
       default: {}
     }
@@ -50,7 +50,7 @@ export default Vue.extend({
   data() {
     return {
       itemName: '',
-      items: [] as RemoteSearchResult[],
+      searchResults: [] as RemoteSearchResult[],
       replaceImages: true,
       loading: false
     };
@@ -71,7 +71,7 @@ export default Vue.extend({
               }
             }
           );
-          this.items = response.data;
+          this.searchResults = response.data;
           break;
         }
         case 'Movie': {
@@ -83,7 +83,7 @@ export default Vue.extend({
               }
             }
           );
-          this.items = response.data;
+          this.searchResults = response.data;
           break;
         }
       }
