@@ -37,14 +37,14 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { RemoteSearchResult } from '~/api/api';
+import { BaseItemDto, RemoteSearchResult } from '~/api/api';
 
 export default Vue.extend({
   props: {
-    itemId: {
-      type: String,
+    item: {
+      type: BaseItemDto,
       required: true,
-      default: ''
+      default: {}
     }
   },
   data() {
@@ -60,15 +60,34 @@ export default Vue.extend({
       this.loading = true;
       // TODO Add support for searching by IMDB/TVDB/Zap2It
       // TODO Add support for filtering by adding production year
-      // TODO Add support for searching for films
-      const response = await this.$itemLookupApi.getSeriesRemoteSearchResults({
-        seriesInfoRemoteSearchQuery: {
-          SearchInfo: { Name: this.itemName },
-          ItemId: this.$props.itemId
-        }
-      });
 
-      this.items = response.data;
+      switch (this.$props.item.Type) {
+        case 'Series': {
+          const response = await this.$itemLookupApi.getSeriesRemoteSearchResults(
+            {
+              seriesInfoRemoteSearchQuery: {
+                SearchInfo: { Name: this.itemName },
+                ItemId: this.$props.itemId
+              }
+            }
+          );
+          this.items = response.data;
+          break;
+        }
+        case 'Movie': {
+          const response = await this.$itemLookupApi.getMovieRemoteSearchResults(
+            {
+              movieInfoRemoteSearchQuery: {
+                SearchInfo: { Name: this.itemName },
+                ItemId: this.$props.itemId
+              }
+            }
+          );
+          this.items = response.data;
+          break;
+        }
+      }
+
       this.loading = false;
     },
     async setItem(info: RemoteSearchResult) {
