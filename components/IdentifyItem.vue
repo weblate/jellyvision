@@ -20,7 +20,7 @@
       <v-card
         v-for="item in items"
         :key="item.ProviderIds.Imdb"
-        class="mb-3"
+        class="mb-5"
         @click="setItem(item)"
       >
         <v-img v-if="item.ImageUrl" :src="getSearchImage(item.ImageUrl)" />
@@ -114,9 +114,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .identifyItemContainer {
-  background: black;
   padding: 0.5em;
 }
 </style>

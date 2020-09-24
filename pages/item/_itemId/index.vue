@@ -471,4 +471,11 @@ export default Vue.extend({
 .flex-0 {
   flex: 0;
 }
+
+.theme--dark .v-dialog__content >>> .v-dialog {
+  background-color: #1e1e1e;
+}
+.theme--light .v-dialog__content >>> .v-dialog {
+  background-color: #fff;
+}
 </style>
