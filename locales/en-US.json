@@ -30,6 +30,8 @@
   "communityRating": "Community rating",
   "composer": "Composer",
   "connect": "Connect",
+  "cancel": "Cancel",
+  "confirm": "confirm",
   "continueListening": "Continue listening",
   "continueWatching": "Continue watching",
   "criticRating": "Critic rating",
@@ -144,6 +146,7 @@
   "playType": "Play {mediaType}",
   "present": "Present",
   "search": "Search",
+  "select": "Select",
   "serverAddress": "Server address",
   "serverAddressMustBeUrl": "Server address must be a valid URL",
   "serverAddressRequired": "Server address is required",
@@ -269,5 +272,6 @@
   "upNext": "Up next",
   "username": "Username",
   "usernameRequired": "Username is required",
+  "year": "Year",
   "widenQuery": "Try widening your query"
 }
