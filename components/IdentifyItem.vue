@@ -100,7 +100,8 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { BaseItemDto, RemoteSearchResult } from '~/api/api';
+import { mapActions } from 'vuex';
+import { BaseItemDto, RemoteSearchResult } from '@jellyfin/client-axios';
 
 export default Vue.extend({
   props: {
@@ -122,6 +123,8 @@ export default Vue.extend({
     };
   },
   methods: {
+    ...mapActions('snackbar', ['pushSnackbarMessage']),
+
     async lookupData() {
       this.loading = true;
 
@@ -129,7 +132,7 @@ export default Vue.extend({
 
       switch (this.$props.item.Type) {
         case 'Series': {
-          const response = await this.$itemLookupApi.getSeriesRemoteSearchResults(
+          const response = await this.$api.itemLookup.getSeriesRemoteSearchResults(
             {
               seriesInfoRemoteSearchQuery: {
                 SearchInfo: { Name: this.itemName, Year: this.itemYear },
@@ -141,7 +144,7 @@ export default Vue.extend({
           break;
         }
         case 'Movie': {
-          const response = await this.$itemLookupApi.getMovieRemoteSearchResults(
+          const response = await this.$api.itemLookup.getMovieRemoteSearchResults(
             {
               movieInfoRemoteSearchQuery: {
                 SearchInfo: { Name: this.itemName, Year: this.itemYear },
@@ -173,11 +176,17 @@ export default Vue.extend({
 
         if (response.status === 204) {
           this.loading = false;
-          this.$snackbar(this.$t('itemIdentified') as string, 'success');
+          this.pushSnackbarMessage({
+            message: this.$t('itemIdentified'),
+            error: 'success'
+          });
           this.$emit('identified');
         }
       } catch (error) {
-        this.$snackbar(error, 'error');
+        this.pushSnackbarMessage({
+          message: error,
+          error: 'error'
+        });
       }
     },
     getSearchImage(imageUrl: string) {
