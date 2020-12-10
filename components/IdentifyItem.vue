@@ -5,8 +5,9 @@
         :complete="identifyStage > 1"
         :editable="identifyStage > 1"
         step="1"
-        >{{ $t('search') }}</v-stepper-step
       >
+        {{ $t('search') }}
+      </v-stepper-step>
 
       <v-divider></v-divider>
 
@@ -14,8 +15,9 @@
         :complete="identifyStage > 2"
         :editable="identifyStage > 2"
         step="2"
-        >{{ $t('select') }}</v-stepper-step
       >
+        {{ $t('select') }}
+      </v-stepper-step>
 
       <v-divider></v-divider>
 
@@ -77,9 +79,9 @@
             :src="getSearchImage(selectedItem.ImageUrl)"
           />
           <v-card-title>{{ selectedItem.Name }}</v-card-title>
-          <v-card-subtitle>{{
-            selectedItem.SearchProviderName
-          }}</v-card-subtitle>
+          <v-card-subtitle>
+            {{ selectedItem.SearchProviderName }}
+          </v-card-subtitle>
         </v-card>
 
         <v-checkbox v-model="replaceImages" label="Replace Existing Images" />
