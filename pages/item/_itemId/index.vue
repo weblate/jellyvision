@@ -67,9 +67,29 @@
                 {{ $t('play') }}
               </v-btn>
               <v-skeleton-loader v-else type="button" />
-              <v-btn v-if="loaded" outlined icon>
-                <v-icon>mdi-dots-horizontal</v-icon>
-              </v-btn>
+              <v-menu offset-y>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn v-if="loaded" outlined icon v-bind="attrs" v-on="on">
+                    <v-icon>mdi-dots-horizontal</v-icon>
+                  </v-btn>
+                </template>
+                <v-list>
+                  <v-list-item
+                    v-for="(option, index) in moreOptions"
+                    :key="`${option.title}-${index}`"
+                    @click="openDialog(option)"
+                  >
+                    <v-list-item-title>{{ option.title }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+
+              <v-dialog v-model="identifyDialog" width="500">
+                <identify-item
+                  :item="item"
+                  @identified="identifyDialog = false"
+                />
+              </v-dialog>
             </div>
             <v-col class="mt-2" cols="10">
               <v-row

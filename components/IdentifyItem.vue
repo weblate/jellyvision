@@ -167,10 +167,9 @@ export default Vue.extend({
     async setItem(info: RemoteSearchResult) {
       try {
         this.loading = true;
-        const response = await this.$itemLookupApi.applySearchCriteria({
+        const response = await this.$api.itemLookup.applySearchCriteria({
           remoteSearchResult: info,
           itemId: this.$props.item.Id,
-          id: this.$props.item.Id,
           replaceAllImages: this.replaceImages
         });
 
