@@ -1,5 +1,5 @@
 <template>
-  <div v-if="items.length > 0">
+  <div v-if="actions.length > 0">
     <v-menu absolute>
       <template #activator="{ on, attrs }">
         <v-btn
@@ -16,43 +16,56 @@
       </template>
       <v-list>
         <v-list-item
-          v-for="(item, index) in items"
+          v-for="(action, index) in actions"
           :key="index"
-          @click="item.action"
+          @click="action.action"
         >
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-title>{{ action.title }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
-    <metadata-editor-dialog :dialog.sync="dialog" :item-id="itemId" />
+    <metadata-editor-dialog :dialog.sync="metadataDialog" :item-id="item.Id" />
+    <identify-item-dialog :dialog.sync="identifyDialog" :item="item" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import { BaseItemDto } from '@jellyfin/client-axios';
 
 type MenuItem = {
   title: string;
   action: () => void;
 };
+
 export default Vue.extend({
   props: {
-    itemId: { type: String, default: '' }
+    item: {
+      type: Object as () => BaseItemDto,
+      default: {}
+    }
   },
   data() {
     return {
-      dialog: false
+      metadataDialog: false,
+      identifyDialog: false
     };
   },
   computed: {
-    items: {
+    actions: {
       get(): MenuItem[] {
         const menuItems = [] as MenuItem[];
         if (this.$auth.$state.user.Policy.IsAdministrator) {
           menuItems.push({
             title: this.$t('editMetadata') as string,
             action: () => {
-              this.dialog = true;
+              this.metadataDialog = true;
+            }
+          });
+          menuItems.push({
+            title: this.$t('identifyItem') as string,
+            action: () => {
+              this.identifyDialog = true;
             }
           });
         }

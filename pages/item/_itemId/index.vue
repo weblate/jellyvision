@@ -67,29 +67,6 @@
                 {{ $t('play') }}
               </v-btn>
               <v-skeleton-loader v-else type="button" />
-              <v-menu offset-y>
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn v-if="loaded" outlined icon v-bind="attrs" v-on="on">
-                    <v-icon>mdi-dots-horizontal</v-icon>
-                  </v-btn>
-                </template>
-                <v-list>
-                  <v-list-item
-                    v-for="(option, index) in moreOptions"
-                    :key="`${option.title}-${index}`"
-                    @click="openDialog(option)"
-                  >
-                    <v-list-item-title>{{ option.title }}</v-list-item-title>
-                  </v-list-item>
-                </v-list>
-              </v-menu>
-
-              <v-dialog v-model="identifyDialog" width="500">
-                <identify-item
-                  :item="item"
-                  @identified="identifyDialog = false"
-                />
-              </v-dialog>
             </div>
             <v-col class="mt-2" cols="10">
               <v-row
@@ -315,11 +292,6 @@ import {
 } from '@jellyfin/client-axios';
 import imageHelper from '~/mixins/imageHelper';
 
-interface MoreOptions {
-  title: string;
-  name: string;
-}
-
 export default Vue.extend({
   mixins: [imageHelper],
   data() {
@@ -334,9 +306,7 @@ export default Vue.extend({
       audioTracks: [] as MediaStream[],
       currentAudioTrack: {} as MediaStream,
       subtitleTracks: [] as MediaStream[],
-      currentSubtitleTrack: {} as MediaStream,
-      moreOptions: [] as MoreOptions[],
-      identifyDialog: false
+      currentSubtitleTrack: {} as MediaStream
     };
   },
   computed: {
@@ -439,29 +409,6 @@ export default Vue.extend({
     ...mapActions('backdrop', ['setBackdrop', 'clearBackdrop']),
     getLanguageName(code: string) {
       return langs.where('2B', code).name;
-    },
-    /*
-     * returns an array of options for the 'more' button
-     */
-    getMoreOptions() {
-      if (this.$auth.user.Policy.IsAdministrator) {
-        this.moreOptions.push({
-          title: this.$t('identify').toString(),
-          name: 'identify'
-        });
-      }
-    },
-    /*
-     * Opens/closes the relevant dialog
-     */
-    openDialog(option: MoreOptions) {
-      switch (option.name) {
-        case 'identify':
-          this.identifyDialog = true;
-          break;
-        default:
-          break;
-      }
     },
     getSurroundIcon(layout: string) {
       switch (layout) {

@@ -60,7 +60,7 @@
         >
           <v-img
             v-if="result.ImageUrl"
-            :src="getSearchImage(result.ImageUrl)"
+            :src="getSearchImage(result.ImageUrl, result.SearchProviderName)"
           />
           <v-card-title>{{ result.Name }}</v-card-title>
           <v-card-subtitle>{{ result.SearchProviderName }}</v-card-subtitle>
@@ -76,7 +76,12 @@
         <v-card class="mb-5">
           <v-img
             v-if="selectedItem.ImageUrl"
-            :src="getSearchImage(selectedItem.ImageUrl)"
+            :src="
+              getSearchImage(
+                selectedItem.ImageUrl,
+                selectedItem.SearchProviderName
+              )
+            "
           />
           <v-card-title>{{ selectedItem.Name }}</v-card-title>
           <v-card-subtitle>
@@ -126,19 +131,18 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions('snackbar', ['pushSnackbarMessage']),
-
     async lookupData() {
       this.loading = true;
 
       // TODO Add support for searching by IMDB/TVDB/Zap2It
 
-      switch (this.$props.item.Type) {
+      switch (this.item.Type) {
         case 'Series': {
           const response = await this.$api.itemLookup.getSeriesRemoteSearchResults(
             {
               seriesInfoRemoteSearchQuery: {
                 SearchInfo: { Name: this.itemName, Year: this.itemYear },
-                ItemId: this.$props.itemId
+                ItemId: this.item.Id
               }
             }
           );
@@ -150,7 +154,7 @@ export default Vue.extend({
             {
               movieInfoRemoteSearchQuery: {
                 SearchInfo: { Name: this.itemName, Year: this.itemYear },
-                ItemId: this.$props.itemId
+                ItemId: this.item.Id
               }
             }
           );
@@ -171,7 +175,7 @@ export default Vue.extend({
         this.loading = true;
         const response = await this.$api.itemLookup.applySearchCriteria({
           remoteSearchResult: info,
-          itemId: this.$props.item.Id,
+          itemId: this.item.Id || '',
           replaceAllImages: this.replaceImages
         });
 
@@ -190,8 +194,10 @@ export default Vue.extend({
         });
       }
     },
-    getSearchImage(imageUrl: string) {
-      return `${this.$axios.defaults.baseURL}/Items/RemoteSearch/Image?imageUrl=${imageUrl}&ProviderName=The%20Open%20Movie%20Database`;
+    getSearchImage(imageUrl: string, searchProviderName: string) {
+      return encodeURI(
+        `${this.$axios.defaults.baseURL}/Items/RemoteSearch/Image?imageUrl=${imageUrl}&ProviderName=${searchProviderName}&api_key=${this.$store.state.user.accessToken}`
+      );
     },
     exit() {
       this.$emit('identified');
