@@ -80,7 +80,6 @@ const config: NuxtConfig = {
     'plugins/nativeWebsocketPlugin.ts',
     // Components
     { src: 'plugins/components/swiper.ts', mode: 'client' },
-    'plugins/components/vueVirtualScroller.ts',
     'plugins/components/veeValidate.ts',
     'plugins/components/vueDraggable.ts',
     // Utility
