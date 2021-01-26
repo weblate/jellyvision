@@ -44,6 +44,7 @@ interface TableHeaders {
 }
 
 export default Vue.extend({
+  middleware: 'adminMiddleware',
   async asyncData({ $api }) {
     const apiKeys = (await $api.apiKey.getKeys()).data.Items;
 
