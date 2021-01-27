@@ -21,7 +21,7 @@
           outlined
           hide-details
           class="mt-4"
-          :label="$t('password')"
+          :label="$t('validation.password')"
           :append-icon="showPassword ? 'mdi-eye-off' : 'mdi-eye'"
           :type="showPassword ? 'text' : 'password'"
           @click:append="() => (showPassword = !showPassword)"

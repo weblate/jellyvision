@@ -1,11 +1,18 @@
 <template>
-  <v-avatar v-if="userImage">
-    <v-img :src="userImage" :alt="$auth.user.Name" class="userImage">
+  <v-avatar v-if="userImage" :size="size">
+    <v-img
+      :src="userImage"
+      :alt="$auth.user.Name"
+      :width="size"
+      :height="size"
+      class="userImage"
+    >
       <template #placeholder>
-        <v-avatar color="primary">
+        <v-avatar color="primary" :size="size">
           <v-icon dark>mdi-account</v-icon>
         </v-avatar>
       </template>
+      <slot />
     </v-img>
   </v-avatar>
   <v-avatar v-else color="primary">
@@ -27,6 +34,11 @@ export default Vue.extend({
       type: Number,
       required: false,
       default: 90
+    },
+    size: {
+      type: String,
+      required: false,
+      default: '48'
     }
   },
   computed: {
