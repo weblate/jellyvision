@@ -164,7 +164,6 @@ export default Vue.extend({
     }
   },
   beforeMount() {
-    this.callAllCallbacks();
     this.refreshUserViews();
 
     const socketParams = stringify({
@@ -177,6 +176,24 @@ export default Vue.extend({
 
     this.$connect(socketUrl);
     this.handleKeepAlive();
+
+    this.$store.watch(
+      (_state, getters) => getters['displayPreferences/getDarkMode'],
+      (darkMode: boolean) => {
+        this.$vuetify.theme.dark = darkMode;
+      }
+    );
+
+    this.$store.watch(
+      (_state, getters) => getters['displayPreferences/getLocale'],
+      (locale: string) => {
+        if (locale !== 'auto') this.$i18n.setLocale(locale);
+        else
+          this.$i18n.setLocale(
+            this.$i18n.getBrowserLocale() || this.$i18n.defaultLocale || 'en'
+          );
+      }
+    );
   },
   mounted() {
     window.addEventListener('scroll', this.setIsScrolled, { passive: true });
