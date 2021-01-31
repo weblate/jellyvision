@@ -5,12 +5,14 @@
       :items="items"
       :shape="section.shape"
       :loading="$fetchState.pending"
+      @item-updated="onItemUpdate"
     />
   </client-only>
 </template>
 
 <script lang="ts">
 import { BaseItemDto } from '@jellyfin/client-axios';
+import { findIndex } from 'lodash';
 import Vue from 'vue';
 import { mapGetters, mapActions } from 'vuex';
 import { HomeSection } from '~/store/homeSection';
@@ -65,7 +67,12 @@ export default Vue.extend({
       getUpNext: 'getUpNext',
       getLatestMedia: 'getLatestMedia',
       getLibraries: 'getLibraries'
-    })
+    }),
+    onItemUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      const index = findIndex(this.items, { Id: updatedItem.Id });
+
+      this.items.splice(index, 1, updatedItem);
+    }
   }
 });
 </script>

@@ -41,7 +41,12 @@
                         <div class="d-flex flex-column">
                           <v-row>
                             <v-col cols="1">
-                              <card :item="appearance" no-text no-margin />
+                              <card
+                                :item="appearance"
+                                no-text
+                                no-margin
+                                manual-update
+                              />
                             </v-col>
                             <v-col>
                               <div
@@ -153,6 +158,18 @@ export default Vue.extend({
         return '';
       }
     }
+  },
+  created() {
+    this.$store.subscribe((mutation, state) => {
+      if (
+        this.item.Id &&
+        mutation?.type === 'SOCKET_ONMESSAGE' &&
+        state.socket.message.MessageType === 'LibraryChanged' &&
+        state.socket.message.Data.ItemsUpdated.includes(this.item.Id)
+      ) {
+        this.$nuxt.refresh();
+      }
+    });
   },
   beforeMount() {
     this.setPageTitle({ title: this.item.Name });

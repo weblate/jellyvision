@@ -6,6 +6,7 @@
           :title="title"
           :items="relatedItems"
           :loading="loading"
+          @item-updated="onItemUpdate"
         />
       </client-only>
     </div>
@@ -53,6 +54,7 @@
 import Vue from 'vue';
 import { mapActions } from 'vuex';
 import { BaseItemDto, ImageType } from '@jellyfin/client-axios';
+import { findIndex } from 'lodash';
 import imageHelper from '~/mixins/imageHelper';
 
 export default Vue.extend({
@@ -103,6 +105,11 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions('snackbar', ['pushSnackbarMessage']),
+    onItemUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      const index = findIndex(this.relatedItems, { Id: updatedItem.Id });
+
+      this.relatedItems.splice(index, 1, updatedItem);
+    },
     async refreshItems(): Promise<void> {
       this.loading = true;
 

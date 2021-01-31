@@ -54,7 +54,11 @@
         <v-row v-if="movies.length > 0">
           <v-col>
             <client-only>
-              <swiper-section :title="$t('movies')" :items="movies" />
+              <swiper-section
+                :title="$t('movies')"
+                :items="movies"
+                @item-updated="onMovieUpdate"
+              />
             </client-only>
           </v-col>
         </v-row>
@@ -62,7 +66,11 @@
         <v-row v-if="shows.length > 0">
           <v-col>
             <client-only>
-              <swiper-section :title="$t('shows')" :items="shows" />
+              <swiper-section
+                :title="$t('shows')"
+                :items="shows"
+                @item-updated="onShowUpdate"
+              />
             </client-only>
           </v-col>
         </v-row>
@@ -75,6 +83,7 @@
 import Vue from 'vue';
 import { mapActions } from 'vuex';
 import { BaseItemDto, ImageType } from '@jellyfin/client-axios';
+import { findIndex } from 'lodash';
 import imageHelper from '~/mixins/imageHelper';
 import timeUtils from '~/mixins/timeUtils';
 
@@ -150,6 +159,18 @@ export default Vue.extend({
       }
     }
   },
+  created() {
+    this.$store.subscribe((mutation, state) => {
+      if (
+        this.item.Id &&
+        mutation?.type === 'SOCKET_ONMESSAGE' &&
+        state.socket.message.MessageType === 'LibraryChanged' &&
+        state.socket.message.Data.ItemsUpdated.includes(this.item.Id)
+      ) {
+        this.$nuxt.refresh();
+      }
+    });
+  },
   beforeMount() {
     const hash = this.getBlurhash(this.item, ImageType.Backdrop);
     this.setBackdrop({ hash });
@@ -159,6 +180,16 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions('backdrop', ['setBackdrop', 'clearBackdrop']),
+    onMovieUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      const index = findIndex(this.movies, { Id: updatedItem.Id });
+
+      this.movies.splice(index, 1, updatedItem);
+    },
+    onShowUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      const index = findIndex(this.shows, { Id: updatedItem.Id });
+
+      this.shows.splice(index, 1, updatedItem);
+    },
     getImageUrl(itemId: string | undefined): string | undefined {
       const element = this.$refs.personImg as HTMLElement;
       if (itemId) {
