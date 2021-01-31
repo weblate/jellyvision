@@ -30,6 +30,7 @@
         v-if="items.length"
         :items="items"
         :loading="$fetchState.pending"
+        @item-updated="onItemUpdate"
       />
       <v-row v-else-if="!$fetchState.pending" justify="center">
         <v-col cols="12" class="card-grid-container empty-card-container">
@@ -49,6 +50,7 @@
 import Vue from 'vue';
 import { mapActions } from 'vuex';
 import { BaseItemDto } from '@jellyfin/client-axios';
+import { findIndex } from 'lodash';
 import itemHelper from '~/mixins/itemHelper';
 
 export default Vue.extend({
@@ -97,7 +99,12 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions('playbackManager', ['play']),
-    ...mapActions('page', ['setPageTitle', 'setAppBarOpacity'])
+    ...mapActions('page', ['setPageTitle', 'setAppBarOpacity']),
+    onItemUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      const index = findIndex(this.items, { Id: updatedItem.Id });
+
+      this.items.splice(index, 1, updatedItem);
+    }
   }
 });
 </script>
