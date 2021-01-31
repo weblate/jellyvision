@@ -85,6 +85,12 @@ export default Vue.extend({
         };
       });
     }
+  },
+  methods: {
+    onItemUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      // Since we can't mutate props, just forward the update to the parent
+      this.$emit('item-updated', { updatedItem });
+    }
   }
 });
 </script>

@@ -48,7 +48,7 @@
     </v-app-bar>
     <v-container class="after-second-toolbar">
       <skeleton-item-grid v-if="loading" :view-type="viewType" />
-      <item-grid :loading="loading" :items="items">
+      <item-grid :loading="loading" :items="items" @item-updated="onItemUpdate">
         <h1 v-if="!hasFilters && isDefaultView" class="text-h5">
           {{ $t('libraryEmpty') }}
         </h1>
@@ -61,6 +61,7 @@
 import Vue from 'vue';
 import { mapActions } from 'vuex';
 import { BaseItemDto } from '@jellyfin/client-axios';
+import { findIndex } from 'lodash';
 import { validLibraryTypes } from '~/utils/items';
 
 export default Vue.extend({
@@ -201,6 +202,11 @@ export default Vue.extend({
   methods: {
     ...mapActions('page', ['setPageTitle', 'setAppBarOpacity']),
     ...mapActions('snackbar', ['pushSnackbarMessage']),
+    onItemUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      const index = findIndex(this.items, { Id: updatedItem.Id });
+
+      this.items.splice(index, 1, updatedItem);
+    },
     onChangeType(type: string): void {
       const defaultViews = ['Series', 'Movie', 'Book', 'MusicAlbum'];
 

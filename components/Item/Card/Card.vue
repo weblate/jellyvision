@@ -96,18 +96,15 @@
 <script lang="ts">
 import Vue from 'vue';
 import { mapActions } from 'vuex';
-import { BaseItemDto, ImageType } from '@jellyfin/client-axios';
+import { ImageType } from '@jellyfin/client-axios';
 import imageHelper from '~/mixins/imageHelper';
 import itemHelper from '~/mixins/itemHelper';
+import itemUpdate from '~/mixins/itemUpdate';
 import { validLibraryTypes } from '~/utils/items';
 
 export default Vue.extend({
-  mixins: [imageHelper, itemHelper],
+  mixins: [imageHelper, itemHelper, itemUpdate],
   props: {
-    item: {
-      type: Object as () => BaseItemDto,
-      required: true
-    },
     shape: {
       type: [String, Boolean],
       default: (): string | boolean => {
