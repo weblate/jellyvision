@@ -10,6 +10,7 @@
               :link="false"
               no-text
               no-margin
+              manual-update
             />
           </v-col>
           <v-col cols="12" md="9">
@@ -437,6 +438,18 @@ export default Vue.extend({
         );
       }
     }
+  },
+  created() {
+    this.$store.subscribe((mutation, state) => {
+      if (
+        this.item.Id &&
+        mutation?.type === 'SOCKET_ONMESSAGE' &&
+        state.socket.message.MessageType === 'LibraryChanged' &&
+        state.socket.message.Data.ItemsUpdated.includes(this.item.Id)
+      ) {
+        this.$nuxt.refresh();
+      }
+    });
   },
   beforeMount() {
     if (this.item) {

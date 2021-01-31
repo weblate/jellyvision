@@ -20,7 +20,7 @@
 
       <swiper class="swiper" :options="swiperOptions">
         <swiper-slide v-for="item in items" :key="item.Id">
-          <card :shape="shape" :item="item" />
+          <card :shape="shape" :item="item" @item-updated="onItemUpdate" />
         </swiper-slide>
       </swiper>
     </v-col>
@@ -88,6 +88,12 @@ export default Vue.extend({
         }
       } as SwiperOptions
     };
+  },
+  methods: {
+    onItemUpdate({ updatedItem }: { updatedItem: BaseItemDto }): void {
+      // Since we can't mutate props, just forward the update to the parent
+      this.$emit('item-updated', { updatedItem });
+    }
   }
 });
 </script>

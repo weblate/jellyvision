@@ -8,10 +8,12 @@ import { BaseItemDto } from '@jellyfin/client-axios';
 
 declare module '@nuxt/types' {
   interface Context {
+    manualUpdate: boolean;
     item: BaseItemDto;
   }
 
   interface NuxtAppOptions {
+    manualUpdate: boolean;
     item: BaseItemDto;
   }
 }
@@ -19,6 +21,7 @@ declare module '@nuxt/types' {
 declare module 'vue/types/vue' {
   interface Vue {
     item: BaseItemDto;
+    manualUpdate: boolean;
   }
 }
 
@@ -27,26 +30,31 @@ const itemUpdate = Vue.extend({
     item: {
       type: Object as () => BaseItemDto,
       required: true
+    },
+    manualUpdate: {
+      type: Boolean
     }
   },
   created() {
-    this.$store.subscribe(async (mutation, state) => {
-      if (
-        this.item.Id &&
-        mutation?.type === 'SOCKET_ONMESSAGE' &&
-        state.socket.message.MessageType === 'LibraryChanged' &&
-        state.socket.message.Data.ItemsUpdated.includes(this.item.Id)
-      ) {
-        const updatedItem = (
-          await this.$api.userLibrary.getItem({
-            userId: this.$auth.user?.Id,
-            itemId: this.item.Id
-          })
-        ).data;
+    if (!this.manualUpdate) {
+      this.$store.subscribe(async (mutation, state) => {
+        if (
+          this.item.Id &&
+          mutation?.type === 'SOCKET_ONMESSAGE' &&
+          state.socket.message.MessageType === 'LibraryChanged' &&
+          state.socket.message.Data.ItemsUpdated.includes(this.item.Id)
+        ) {
+          const updatedItem = (
+            await this.$api.userLibrary.getItem({
+              userId: this.$auth.user?.Id,
+              itemId: this.item.Id
+            })
+          ).data;
 
-        this.$emit('item-updated', { updatedItem });
-      }
-    });
+          this.$emit('item-updated', { updatedItem });
+        }
+      });
+    }
   }
 });
 
