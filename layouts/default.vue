@@ -111,6 +111,7 @@ import Vue from 'vue';
 import { mapActions, mapState, MutationPayload } from 'vuex';
 import { AppState } from '~/store';
 import { getLibraryIcon } from '~/utils/items';
+import displayPreferencesHelper from '~/mixins/displayPreferencesHelper';
 
 interface WebSocketMessage {
   MessageType: string;
@@ -124,6 +125,7 @@ interface LayoutButton {
 }
 
 export default Vue.extend({
+  mixins: [displayPreferencesHelper],
   data() {
     return {
       isScrolled: false,
@@ -177,23 +179,8 @@ export default Vue.extend({
     this.$connect(socketUrl);
     this.handleKeepAlive();
 
-    this.$store.watch(
-      (_state, getters) => getters['displayPreferences/getDarkMode'],
-      (darkMode: boolean) => {
-        this.$vuetify.theme.dark = darkMode;
-      }
-    );
-
-    this.$store.watch(
-      (_state, getters) => getters['displayPreferences/getLocale'],
-      (locale: string) => {
-        if (locale !== 'auto') this.$i18n.setLocale(locale);
-        else
-          this.$i18n.setLocale(
-            this.$i18n.getBrowserLocale() || this.$i18n.defaultLocale || 'en'
-          );
-      }
-    );
+    this.watchDarkMode();
+    this.watchLocale();
   },
   mounted() {
     window.addEventListener('scroll', this.setIsScrolled, { passive: true });
