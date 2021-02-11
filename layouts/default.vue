@@ -178,9 +178,6 @@ export default Vue.extend({
 
     this.$connect(socketUrl);
     this.handleKeepAlive();
-
-    this.watchDarkMode();
-    this.watchLocale();
   },
   mounted() {
     window.addEventListener('scroll', this.setIsScrolled, { passive: true });
