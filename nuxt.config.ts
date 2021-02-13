@@ -271,6 +271,8 @@ const config: NuxtConfig = {
         server: '#424242'
       }
     },
+    optimizeCSS: true,
+    extractCSS: true,
     babel: {
       plugins: ['lodash'],
       presets: [
