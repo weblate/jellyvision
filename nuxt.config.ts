@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import type { NuxtConfig } from '@nuxt/types';
 import webpack from 'webpack';
-import LodashModuleReplacementPlugin from 'lodash-webpack-plugin';
 
 const config: NuxtConfig = {
   /*
@@ -301,7 +300,6 @@ const config: NuxtConfig = {
         });
       }
     },
-    plugins: [new LodashModuleReplacementPlugin()],
     transpile: ['@nuxtjs/auth', 'vee-validate/dist/rules']
   },
 
