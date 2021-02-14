@@ -37,7 +37,6 @@
     "present": "现在",
     "rating": "评价",
     "releaseDate": "发布日期",
-    "serverNotFound": "找不到服务器",
     "settings": {
         "apiKeys": {
             "addApiKey": "添加一个 API 密钥",
@@ -273,7 +272,6 @@
     "communityRating": "社区评分",
     "castAndCrew": "演员表",
     "cancel": "取消",
-    "backdrop": "背景",
     "architecture": "架构",
     "allLanguages": "全部语言",
     "addNewPerson": "添加一位新人物",

@@ -38,7 +38,6 @@
     "present": "Teraz",
     "rating": "Ocena",
     "releaseDate": "Data wydania",
-    "serverNotFound": "Serwer nie został znaleziony",
     "settings": {
         "apiKeys": {
             "addApiKey": "Dodaj klucz API",

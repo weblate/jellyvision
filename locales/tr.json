@@ -20,7 +20,6 @@
     "present": "Mevcut",
     "rating": "İzlenme oranı",
     "releaseDate": "Yayın tarihi",
-    "serverNotFound": "Sunucu bulunamadı",
     "signIn": "Giriş yap",
     "unexpectedError": "Beklenmedik hata",
     "upNext": "Sonraki",
@@ -91,7 +90,6 @@
     "buttons": {
         "ok": "Tamam"
     },
-    "backdrop": "Arka plan",
     "audio": "Ses",
     "allLanguages": "Tüm diller",
     "albums": "Albümler",

@@ -37,7 +37,6 @@
     "present": "Jetzt",
     "rating": "Bewertung",
     "releaseDate": "Erscheinungsdatum",
-    "serverNotFound": "Server nicht gefunden",
     "settings": {
         "settings": "Einstellungen",
         "apiKeys": {
@@ -274,7 +273,6 @@
     "communityRating": "Community Bewertungen",
     "castAndCrew": "Schauspieler & Crew",
     "cancel": "Abbrechen",
-    "art": "Bild",
     "allLanguages": "Alle Sprachen",
     "addNewPerson": "Person hinzufügen",
     "actor": "Schauspieler",

@@ -37,7 +37,6 @@
     "present": "Prezentovat",
     "rating": "Hodnocení",
     "releaseDate": "Datum vydání",
-    "serverNotFound": "Server nebyl nalezen",
     "settings": {
         "apiKeys": {
             "addApiKey": "Přidat klíč k API",
@@ -250,7 +249,6 @@
     "communityRating": "Komunitní hodnocení",
     "castAndCrew": "Obsazení a personál",
     "cancel": "Zrušit",
-    "backdrop": "Pozadí",
     "allLanguages": "Všechny jazyky",
     "addNewPerson": "Přidat novou osobu",
     "actor": "Herec",

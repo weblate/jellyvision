@@ -37,7 +37,6 @@
     "present": "தற்போது",
     "rating": "மதிப்பீடு",
     "releaseDate": "வெளியீட்டு தேதி",
-    "serverNotFound": "சேவையகம் கிடைக்கவில்லை",
     "settings": {
         "apiKeys": {
             "addApiKey": "API விசையைச் சேர்க்கவும்",
@@ -274,7 +273,6 @@
     "communityRating": "சமூக மதிப்பீடு",
     "castAndCrew": "நடிகர்கள் & குழு",
     "cancel": "ரத்துசெய்",
-    "backdrop": "பின்னணி",
     "allLanguages": "அனைத்து மொழிகளும்",
     "addNewPerson": "புதிய நபரைச் சேர்க்கவும்",
     "actor": "நடிகர்",

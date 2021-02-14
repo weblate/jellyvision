@@ -41,7 +41,6 @@
     "present": "Н/В",
     "rating": "Оценка",
     "releaseDate": "Дата выпуска",
-    "serverNotFound": "Сервер не найден",
     "serverVersionTooLow": "Версия сервера должна быть 10.7.0 или выше",
     "settings": {
         "apiKeys": {
@@ -275,7 +274,6 @@
     "communityRating": "Общественная оценка",
     "castAndCrew": "Снимались и снимали",
     "cancel": "Отменить",
-    "backdrop": "Задник",
     "allLanguages": "Все языки",
     "actor": "Актёр",
     "3DFormat": "Формат 3D",

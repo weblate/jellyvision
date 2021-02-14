@@ -38,7 +38,6 @@
     "present": "Huidig",
     "rating": "Beoordeling",
     "releaseDate": "Publicatiedatum",
-    "serverNotFound": "Server niet gevonden",
     "settings": {
         "apiKeys": {
             "addApiKey": "Voeg een API-sleutel toe",
@@ -250,7 +249,6 @@
     "communityRating": "Community-beoordeling",
     "castAndCrew": "Acteurs & Medewerkers",
     "cancel": "Annuleren",
-    "backdrop": "Achtergrond",
     "audio": "Geluid",
     "architecture": "Architectuur",
     "allLanguages": "Alle talen",

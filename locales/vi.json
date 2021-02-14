@@ -37,7 +37,6 @@
     "present": "Hiện tại",
     "rating": "Xếp hạng",
     "releaseDate": "Ngày phát hành",
-    "serverNotFound": "Không tìm thấy máy chủ",
     "settings": {
         "apiKeys": {
             "addApiKey": "Thêm khóa API",
@@ -254,7 +253,6 @@
     "addNewPerson": "Thêm người mới",
     "actor": "Diễn viên",
     "3DFormat": "Định dạng 3D",
-    "banner": "Ảnh bìa",
     "video": "Video",
     "logsAndActivity": {
         "noActivityFound": "Không tìm thấy hoạt động nào",

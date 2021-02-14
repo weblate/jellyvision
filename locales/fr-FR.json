@@ -37,7 +37,6 @@
     "present": "Maintenant",
     "rating": "Critique",
     "releaseDate": "Date de sortie",
-    "serverNotFound": "Serveur introuvable",
     "settings": {
         "apiKeys": {
             "addApiKey": "Ajouter une clé API",
@@ -232,7 +231,6 @@
     "architecture": "Architecture",
     "castAndCrew": "Distribution & équipe",
     "cancel": "Annuler",
-    "backdrop": "Toile de fond",
     "audio": "Audio",
     "allLanguages": "Toutes les langues",
     "addNewPerson": "Ajouter une nouvelle personne",

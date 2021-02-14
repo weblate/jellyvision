@@ -41,7 +41,6 @@
     "present": "Ağymda",
     "rating": "Bağalau",
     "releaseDate": "Şyğaru künı",
-    "serverNotFound": "Server tabylmady",
     "serverVersionTooLow": "Server nusqasy 10.7.0 ne odan joǵary qajet",
     "settings": {
         "apiKeys": {
@@ -268,7 +267,6 @@
     "communityRating": "Qauym bağalauy",
     "castAndCrew": "Röldegıler men qyzmetkerler",
     "cancel": "Boldyrmau",
-    "backdrop": "Artqy suret",
     "allLanguages": "Barlyq tılder",
     "addNewPerson": "Jaŋa tūlğany üsteu",
     "actor": "Aktör",
