@@ -37,7 +37,6 @@
     "present": "Maintenant",
     "rating": "Critique",
     "releaseDate": "Date de sortie",
-    "serverAddressMustBeUrl": "L'adresse du serveur doit être une adresse URL valide",
     "serverNotFound": "Serveur introuvable",
     "settings": {
         "apiKeys": {
@@ -118,7 +117,6 @@
     "unliked": "Je n'aime pas",
     "unableGetRelated": "Impossible de récupérer les éléments liés",
     "sortByType": "Par {type}",
-    "selectUser": "Sélectionner un utilisateur",
     "series": "Séries",
     "noResultsFound": "Il n'y a rien ici",
     "networks": "Réseaux",
@@ -160,9 +158,6 @@
         "devices": {
             "name": "Appareils",
             "description": "Voir et gérer les périphériques connectés à votre serveur"
-        },
-        "apiKeys": {
-            "description": "Ajouter et révoquer les clés API pour l'accès externe à votre serveur"
         },
         "account": {
             "name": "Compte",
@@ -237,7 +232,6 @@
     "architecture": "Architecture",
     "castAndCrew": "Distribution & équipe",
     "cancel": "Annuler",
-    "box": "Boîte",
     "backdrop": "Toile de fond",
     "audio": "Audio",
     "allLanguages": "Toutes les langues",
@@ -252,7 +246,6 @@
     "originalAspectRatio": "Ratio d'aspect original",
     "metadataNoResultsMatching": "Pas de résultat pour \"{search}\". Appuyer sur Entrée pour effectuer une nouvelle recherche.",
     "menu": "Menu",
-    "logo": "Logo",
     "images": "Images",
     "headerPaths": "Chemin",
     "general": "Général",
@@ -275,7 +268,6 @@
     "unableGetServerConfiguration": "Impossible de récupérer la configuration du serveur",
     "unableGetPublicUsers": "Impossible de récupérer les utilisateurs",
     "type": "Type",
-    "primary": "Principal",
     "people": "Personnes",
     "parentalRating": "Classification parentale",
     "logsAndActivity": {

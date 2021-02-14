@@ -41,7 +41,6 @@
     "present": "Н/В",
     "rating": "Оценка",
     "releaseDate": "Дата выпуска",
-    "serverAddressMustBeUrl": "Адрес сервера должен быть действительным URL",
     "serverNotFound": "Сервер не найден",
     "serverVersionTooLow": "Версия сервера должна быть 10.7.0 или выше",
     "settings": {
@@ -223,9 +222,6 @@
             "name": "Устройства",
             "description": "Видеть и управлять устройствами подсоединёнными к серверу"
         },
-        "apiKeys": {
-            "description": "Добавлять и отзывать API-ключи для внешнего доступа к вашему серверу"
-        },
         "account": {
             "name": "Учётная запись",
             "description": "Править информацию о пользователе"
@@ -243,13 +239,11 @@
     "failedSettingDisplayPreferences": "Невозможно обновить настройки отображения.",
     "failedRetrievingDisplayPreferences": "Невозможно получить настройки отображения. Используются значения по умолчанию.",
     "architecture": "Архитектура",
-    "activity": "Активность",
     "metadataNoResultsMatching": "Нет результатов по запросу \"{search}\". Нажмите Enter, чтобы создать новый.",
     "addNewPerson": "Добавить персону",
     "year": "Год",
     "writer": "Сценарист",
     "type": "Тип",
-    "thumb": "Бегунок",
     "tags": "Теги",
     "tagline": "Девиз",
     "sortTitle": "Название для сортировки",
@@ -281,7 +275,6 @@
     "communityRating": "Общественная оценка",
     "castAndCrew": "Снимались и снимали",
     "cancel": "Отменить",
-    "box": "Коробка",
     "backdrop": "Задник",
     "allLanguages": "Все языки",
     "actor": "Актёр",

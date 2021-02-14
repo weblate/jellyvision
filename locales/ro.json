@@ -20,7 +20,6 @@
     "present": "Acum",
     "rating": "Evaluare",
     "releaseDate": "Data lansării",
-    "serverAddressMustBeUrl": "Adresa serverului trebuie să fie un URL valid",
     "serverNotFound": "Serverul nu a fost gasit",
     "signIn": "Autentificare",
     "unexpectedError": "Eroare neașteptată",
@@ -49,7 +48,6 @@
     "shows": "Spectacole",
     "serverVersionTooLow": "Versiunea serverului trebuie să fie 10.7.0 sau mai mare",
     "series": "Serial",
-    "selectServer": "Selectează server",
     "resumable": "Poate fi continuat",
     "played": "Rulat",
     "parentalRatings": "Evaluări parentale",
@@ -82,7 +80,6 @@
     "darkModeToggle": "Comutați modul întunecat",
     "connect": "Conectare",
     "collections": "Colecții",
-    "changeServer": "Schimbă server",
     "byArtist": "De",
     "buttons": {
         "ok": "Ok"
@@ -111,7 +108,6 @@
     "unableGetServerConfiguration": "Nu se poate obține configurarea serverului",
     "unableGetPublicUsers": "Nu se pot obține utilizatorii",
     "type": "Tip",
-    "thumb": "Miniatură",
     "tags": "Etichete",
     "tagline": "Slogan",
     "sortTitle": "Sortează titlul",
@@ -180,9 +176,6 @@
             "name": "Dispozitive",
             "description": "Vedeți și gestionați dispozitivele conectate la serverul dvs."
         },
-        "apiKeys": {
-            "description": "Adăugați și revocați chei API pentru acces extern la serverul dvs."
-        },
         "account": {
             "name": "Cont",
             "description": "Editați informațiile utilizatorului"
@@ -236,7 +229,6 @@
     "communityRating": "Evaluare de către comunitate",
     "castAndCrew": "Distribuție și echipă",
     "cancel": "Anulează",
-    "box": "Cutie",
     "backdrop": "Fundal",
     "audio": "Audio",
     "architecture": "Arhitectura",

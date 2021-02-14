@@ -25,7 +25,6 @@
     "logout": "Logg ut",
     "more": "Mer",
     "play": "Spill av",
-    "serverAddressRequired": "Serveradresse er påkrevd",
     "settings": {
         "settings": "Innstillinger",
         "apiKeys": {
@@ -47,7 +46,6 @@
         }
     },
     "unexpectedError": "Uventet feil",
-    "serverAddress": "Serveradresse",
     "username": "Brukernavn",
     "password": "Passord",
     "signIn": "Logg inn",
@@ -90,7 +88,6 @@
     "connect": "Koble til",
     "communityRating": "Fellesskapets vurdering",
     "collections": "Samlinger",
-    "changeServer": "Bytt server",
     "castAndCrew": "Rollebesetning og mannskap",
     "cancel": "Avbryt",
     "byArtist": "Av",
@@ -98,9 +95,7 @@
         "ok": "Ok"
     },
     "browserNotSupported": "Din nettleser kan ikke spille av denne filen.",
-    "box": "Etui",
     "biography": "Biografi",
-    "backdrop": "Bakgrunn",
     "audio": "Lyd",
     "artists": "Artister",
     "artist": "Artist",
@@ -189,9 +184,6 @@
             "name": "Enheter",
             "description": "Se og administrer enheter koblet til din server"
         },
-        "apiKeys": {
-            "description": "Legg til og revoker API-nøkler for ekstern tilgang til din server"
-        },
         "account": {
             "name": "Brukerkonto",
             "description": "Rediger din brukerinformasjon"
@@ -239,7 +231,6 @@
         "switchToDarkMode": "Bytt til mørk modus",
         "changeLanguage": "Språk"
     },
-    "thumb": "Miniatyr",
     "tags": "Etiketter",
     "tagline": "Slagord",
     "studios": "Studioer",
@@ -250,7 +241,6 @@
     "serverVersion": "Serverversjon",
     "server": "Server",
     "series": "Serier",
-    "selectServer": "Velg server",
     "search": "Søk",
     "saved": "Lagret",
     "save": "Lagre",
@@ -286,7 +276,6 @@
         "activity": "Aktivitet",
         "noLogsFound": "Ingen logger funnet"
     },
-    "loginAs": "Logg inn som {name}",
     "links": {
         "reportAnIssue": "Rapporter en feil i Vue-klienten",
         "readTheDocumentation": "Les dokumentasjonen",

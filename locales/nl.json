@@ -38,7 +38,6 @@
     "present": "Huidig",
     "rating": "Beoordeling",
     "releaseDate": "Publicatiedatum",
-    "serverAddressMustBeUrl": "Server adres moet een geldige URL zijn",
     "serverNotFound": "Server niet gevonden",
     "settings": {
         "apiKeys": {
@@ -140,9 +139,6 @@
         "devices": {
             "name": "Apparaten",
             "description": "Bekijk en beheer de apparaten die met jouw server verbonden zijn"
-        },
-        "apiKeys": {
-            "description": "Verwijder en voeg API sleutels toe voor externe toegang tot jouw server"
         },
         "account": {
             "name": "Account",
@@ -254,7 +250,6 @@
     "communityRating": "Community-beoordeling",
     "castAndCrew": "Acteurs & Medewerkers",
     "cancel": "Annuleren",
-    "box": "Hoes",
     "backdrop": "Achtergrond",
     "audio": "Geluid",
     "architecture": "Architectuur",

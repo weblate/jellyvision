@@ -41,7 +41,6 @@
     "present": "Ağymda",
     "rating": "Bağalau",
     "releaseDate": "Şyğaru künı",
-    "serverAddressMustBeUrl": "Server mekenjaıynda jaramdy URL qajet",
     "serverNotFound": "Server tabylmady",
     "serverVersionTooLow": "Server nusqasy 10.7.0 ne odan joǵary qajet",
     "settings": {
@@ -179,9 +178,6 @@
             "name": "Tırkelgı",
             "description": "Paıdalanuşy mälımetterın öŋdeu"
         },
-        "apiKeys": {
-            "description": "Serverge syrttan qatynaý úshin API-kіltterіn qosý jáne joıý"
-        },
         "transcodingAndStreaming": {
             "name": "Qaita kodtau men taratu",
             "description": "Qaita kodtaudy jäne tūtynğyştarğa taratudy būl server qalay öŋdeitının basqaru"
@@ -243,7 +239,6 @@
     },
     "unliked": "Ūnamaidy",
     "type": "Türı",
-    "thumb": "Nobai",
     "tags": "Tegter",
     "tagline": "Ūrany",
     "sortTitle": "Sūryptau atauy",
@@ -258,7 +253,6 @@
     "originalTitle": "Bastapqy atauy",
     "originalAspectRatio": "Bastapqy pışımdık araqatynasy",
     "menu": "Mäzır",
-    "loginAs": "{name} atymen kirý",
     "images": "Suretter",
     "headerPaths": "Joly",
     "headerExternalIds": "Syrtqy säikestendırgışter",
@@ -274,7 +268,6 @@
     "communityRating": "Qauym bağalauy",
     "castAndCrew": "Röldegıler men qyzmetkerler",
     "cancel": "Boldyrmau",
-    "box": "Qorap",
     "backdrop": "Artqy suret",
     "allLanguages": "Barlyq tılder",
     "addNewPerson": "Jaŋa tūlğany üsteu",

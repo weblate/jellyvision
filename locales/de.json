@@ -37,7 +37,6 @@
     "present": "Jetzt",
     "rating": "Bewertung",
     "releaseDate": "Erscheinungsdatum",
-    "serverAddressMustBeUrl": "Die Serveradresse muss eine gültige Adresse sein",
     "serverNotFound": "Server nicht gefunden",
     "settings": {
         "settings": "Einstellungen",
@@ -121,7 +120,6 @@
     "unableGetRelated": "Verwandte Elemente konnten nicht abgerufen werden",
     "studios": "Studios",
     "sortByType": "Nach {type}",
-    "selectUser": "Benutzer auswählen",
     "series": "Serie",
     "noResultsFound": "Keine Resultate gefunden",
     "networks": "Netzwerke",
@@ -222,9 +220,6 @@
             "name": "Geräte",
             "description": "Geräte die mit deinem Server verbunden sind"
         },
-        "apiKeys": {
-            "description": "Hinzufügen oder zurückziehen von API-Schlüssel für externen Zugriff auf deinen Server"
-        },
         "account": {
             "name": "Benutzer",
             "description": "Bearbeite deine Benutzerinformationen"
@@ -244,11 +239,9 @@
     "serverVersion": "Serverversion",
     "failedSettingDisplayPreferences": "Es war nicht möglich die Anzeigeeinstellungen zu ändern.",
     "failedRetrievingDisplayPreferences": "Es war nicht möglich die Anzeigeeinstellungen zu lesen. Standard wird verwendet.",
-    "logs": "Protokoll",
     "year": "Jahr",
     "writer": "Drehbuchautor",
     "type": "Typ",
-    "thumb": "Miniaturansicht",
     "tags": "Tags",
     "tagline": "Beschreibung",
     "sortTitle": "Sortiere Titel",
@@ -281,7 +274,6 @@
     "communityRating": "Community Bewertungen",
     "castAndCrew": "Schauspieler & Crew",
     "cancel": "Abbrechen",
-    "banner": "Banner",
     "art": "Bild",
     "allLanguages": "Alle Sprachen",
     "addNewPerson": "Person hinzufügen",

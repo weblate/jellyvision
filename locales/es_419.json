@@ -8,7 +8,6 @@
     "logout": "Salir",
     "more": "Más",
     "play": "Reproducir",
-    "serverAddressRequired": "Dirección del servidor requerida",
     "settings": {
         "apiKeys": {
             "addApiKey": "Añadir clave API",
@@ -30,7 +29,6 @@
         "settings": "Configuración"
     },
     "unexpectedError": "Error inesperado",
-    "serverAddress": "Dirección del servidor",
     "username": "Usuario",
     "password": "Contraseña",
     "signIn": "Ingresar",
@@ -82,7 +80,6 @@
     "studios": "Estudios",
     "sortByType": "Por {type}",
     "series": "Series",
-    "selectServer": "Seleccionar servidor",
     "numberTracks": "{number} pistas",
     "noResultsFound": "No hay nada aquí",
     "nextUp": "Siguiente",
@@ -105,7 +102,6 @@
     "darkModeToggle": "Activar modo oscuro",
     "connect": "Conectar",
     "collections": "Colecciones",
-    "changeServer": "Cambiar de servidor",
     "byArtist": "Por",
     "buttons": {
         "ok": "Aceptar"
@@ -154,7 +150,6 @@
         "switchToDarkMode": "Cambiar a modo oscuro",
         "changeLanguage": "Idioma"
     },
-    "thumb": "Miniatura",
     "tags": "Etiquetas",
     "tagline": "Frase",
     "sortTitle": "Ordenar por titulo",
@@ -300,7 +295,6 @@
     "castAndCrew": "Reparto",
     "cancel": "Cancelar",
     "confirm": "Confirmar",
-    "box": "Caja",
     "backdrop": "Fondo",
     "audio": "Audio",
     "architecture": "Arquitectura",

@@ -33,7 +33,6 @@
     "moreLikeThis": "Similar a esto",
     "play": "Reproducir",
     "present": "Actualidad",
-    "serverAddressRequired": "Se requiere dirección del servidor",
     "settings": {
         "apiKeys": {
             "accessToken": "Token de acceso",
@@ -79,7 +78,6 @@
         }
     },
     "unexpectedError": "Error desconocido",
-    "serverAddress": "Dirección del servidor",
     "username": "Nombre de usuario",
     "password": "Contraseña",
     "signIn": "Iniciar sesión",
@@ -130,7 +128,6 @@
     "artists": "Artistas",
     "actors": "Actores",
     "manualLogin": "Inicio de sesión manual",
-    "changeUser": "Cambiar de usuario",
     "validation": {
         "required": "Este campo es obligatorio",
         "mustBeUrl": "Este campo debe ser una URL válida",
@@ -228,9 +225,6 @@
             "name": "Cuenta",
             "description": "Edita la información de tu cuenta"
         },
-        "apiKeys": {
-            "description": "Añade y elimina claves API para acceso externo a tu servidor"
-        },
         "networking": {
             "description": "Administra las configuraciones de red de este servidor",
             "name": "Redes"
@@ -302,7 +296,6 @@
     "audio": "Audio",
     "video": "Vídeo",
     "sortTitle": "Ordenar título",
-    "banner": "Banner",
     "version": "Versión",
     "unableToRefreshLibrary": "No se pudo actualizar la biblioteca",
     "tvShowAbbrev": "T{seasonNumber} E{episodeNumber}",
@@ -318,7 +311,6 @@
     "libraryRefreshQueued": "Escaneo de biblioteca puesto en cola",
     "fullScreen": "Pantalla completa",
     "upNextName": "A continuación: {upNextItemName}",
-    "stopPlayback": "Detener la reproducción",
     "dateAdded": "Añadido el",
     "noImagesFound": "No se han encontrado imágenes",
     "person": "Persona",

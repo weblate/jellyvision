@@ -37,7 +37,6 @@
     "present": "Prezentovat",
     "rating": "Hodnocení",
     "releaseDate": "Datum vydání",
-    "serverAddressMustBeUrl": "Adresa serveru musí být platná URL adresa",
     "serverNotFound": "Server nebyl nalezen",
     "settings": {
         "apiKeys": {
@@ -89,7 +88,6 @@
     "filtersNotFound": "Nelze načíst filtry",
     "unhandledException": "Neošetřená výjimka",
     "connect": "Připojit",
-    "shuffleAll": "Náhodně vše",
     "moreLikeArtist": "Podobné jako {artist}",
     "byArtist": "Od",
     "biography": "Životopis",
@@ -154,9 +152,6 @@
             "name": "Zařízení",
             "description": "Zobrazit a spravovat zařízení připojená k serveru"
         },
-        "apiKeys": {
-            "description": "Přidat nebo zneplatnit klíče k API pro externí přístup k serveru"
-        },
         "account": {
             "name": "Účet",
             "description": "Upravit informace o uživateli"
@@ -220,11 +215,9 @@
     "architecture": "Architektura",
     "vueClientVersion": "Verze klienta Vue",
     "serverVersion": "Verze serveru",
-    "activity": "Aktivita",
     "year": "Rok",
     "writer": "Scénarista",
     "type": "Typ",
-    "thumb": "Náhled",
     "tags": "Štítky",
     "tagline": "Podtitul",
     "sortTitle": "Název pro řazení",
@@ -257,7 +250,6 @@
     "communityRating": "Komunitní hodnocení",
     "castAndCrew": "Obsazení a personál",
     "cancel": "Zrušit",
-    "box": "Krabice",
     "backdrop": "Pozadí",
     "allLanguages": "Všechny jazyky",
     "addNewPerson": "Přidat novou osobu",

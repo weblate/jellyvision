@@ -38,7 +38,6 @@
     "present": "Teraz",
     "rating": "Ocena",
     "releaseDate": "Data wydania",
-    "serverAddressMustBeUrl": "Adres serwera musi być prawidłowym adresem URL",
     "serverNotFound": "Serwer nie został znaleziony",
     "settings": {
         "apiKeys": {
@@ -137,9 +136,6 @@
             "description": "Czytaj i przeszukuj dziennik zdarzeń serwera i aktywność użytkowników",
             "name": "Dziennik zdarzeń i aktywność"
         },
-        "apiKeys": {
-            "name": "Klucze API"
-        },
         "account": {
             "description": "Edytuj swój profil",
             "name": "Konto"
@@ -221,13 +217,11 @@
     "undefined": "Nieustalony",
     "unableGetServerConfiguration": "Nie udało się odczytać konfiguracji serwera",
     "type": "Typ",
-    "thumb": "Miniatura",
     "tags": "Znaczniki",
     "studios": "Wytwórnie",
     "serverVersion": "Wersja serwera",
     "server": "Serwer",
     "series": "Seriale",
-    "selectServer": "Wybierz serwer",
     "search": "Szukaj",
     "saved": "Zapisano",
     "save": "Zapisz",
@@ -255,7 +249,6 @@
         "activity": "Aktywność",
         "noLogsFound": "Nie znaleziono dziennika zdarzeń"
     },
-    "loginAs": "Zaloguj jako {name}",
     "liked": "Polubione",
     "libraries": "Biblioteki",
     "latestLibrary": "Najnowsze {libraryName}",
@@ -289,16 +282,13 @@
     "connect": "Połącz",
     "communityRating": "Ocena społeczności",
     "collections": "Kolekcje",
-    "changeServer": "Zmień serwer",
     "castAndCrew": "Obsada i ekipa",
     "cancel": "Anuluj",
     "byArtist": "Od",
     "buttons": {
         "ok": "Ok"
     },
-    "box": "Pudełko",
     "biography": "Biografia",
-    "backdrop": "Fototapeta",
     "audio": "Dźwięk",
     "artists": "Wykonawcy",
     "artist": "Wykonawca",

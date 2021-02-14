@@ -20,7 +20,6 @@
     "present": "Mevcut",
     "rating": "İzlenme oranı",
     "releaseDate": "Yayın tarihi",
-    "serverAddressMustBeUrl": "Sunucu adresi geçerli bir URL olmalıdır",
     "serverNotFound": "Sunucu bulunamadı",
     "signIn": "Giriş yap",
     "unexpectedError": "Beklenmedik hata",
@@ -87,13 +86,11 @@
     "connect": "Bağlan",
     "communityRating": "Kullanıcı puanı",
     "collections": "Koleksiyon",
-    "changeServer": "Sunucuyu değiştir",
     "castAndCrew": "Oyuncular & Ekip",
     "cancel": "İptal",
     "buttons": {
         "ok": "Tamam"
     },
-    "box": "Kutu",
     "backdrop": "Arka plan",
     "audio": "Ses",
     "allLanguages": "Tüm diller",

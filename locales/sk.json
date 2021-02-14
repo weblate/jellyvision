@@ -20,7 +20,6 @@
     "present": "Prezentovať",
     "rating": "Hodnotenie",
     "releaseDate": "Dátum vydania",
-    "serverAddressMustBeUrl": "Adresa servera musí byť platná adresa",
     "serverNotFound": "Server nebol nájdený",
     "signIn": "Prihlásiť sa",
     "unexpectedError": "Neočakávaná chyba",
@@ -63,7 +62,6 @@
     "darkModeToggle": "Prepnúť na tmavý režim",
     "connect": "Pripojiť",
     "collections": "Kolekcie",
-    "changeServer": "Zmeniť server",
     "byArtist": "Od",
     "biography": "Biografia",
     "artists": "Interpreti",
@@ -80,7 +78,6 @@
     "studios": "Štúdiá",
     "sortByType": "Podľa {type}",
     "series": "Seriály",
-    "selectServer": "Vybrať server",
     "numberTracks": "{number} stôp",
     "noResultsFound": "Nič tu nie je"
 }

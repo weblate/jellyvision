@@ -37,7 +37,6 @@
     "present": "Hiện tại",
     "rating": "Xếp hạng",
     "releaseDate": "Ngày phát hành",
-    "serverAddressMustBeUrl": "Địa chỉ máy chủ phải là một URL hợp lệ",
     "serverNotFound": "Không tìm thấy máy chủ",
     "settings": {
         "apiKeys": {
@@ -108,7 +107,6 @@
     "artists": "Nghệ sĩ",
     "actors": "Diễn viên",
     "manualLogin": "Đăng nhập thủ công",
-    "changeUser": "Thay đổi người sử dụng",
     "unableGetRelated": "Không lấy dữ liệu các mục liên quan",
     "validation": {
         "mustBeUrl": "Trường này phải là một URL hợp lệ",
@@ -200,9 +198,6 @@
             "name": "Thiết bị",
             "description": "Xem và quản lý các thiết bị được kết nối với máy chủ của bạn"
         },
-        "apiKeys": {
-            "description": "Thêm và thu hồi các khóa API để truy cập bên ngoài vào máy chủ của bạn"
-        },
         "account": {
             "name": "Tài khoản",
             "description": "Chỉnh sửa thông tin người dùng của bạn"
@@ -220,7 +215,6 @@
     "failedSettingDisplayPreferences": "Không thể cập nhật tùy chọn hiển thị.",
     "failedRetrievingDisplayPreferences": "Không thể lấy thông tin tùy chọn hiển thị. Sử dụng giá trị mặc định.",
     "architecture": "Kiến trúc",
-    "activity": "Hoạt động",
     "year": "Năm",
     "writer": "Soạn giả",
     "type": "Kiểu",
@@ -260,7 +254,6 @@
     "addNewPerson": "Thêm người mới",
     "actor": "Diễn viên",
     "3DFormat": "Định dạng 3D",
-    "boxRear": "Hộp (phía sau)",
     "banner": "Ảnh bìa",
     "video": "Video",
     "logsAndActivity": {

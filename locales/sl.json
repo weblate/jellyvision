@@ -20,14 +20,12 @@
     "present": "",
     "rating": "",
     "releaseDate": "",
-    "serverAddressMustBeUrl": "Naslov strežnika mora biti veljaven URL",
     "serverNotFound": "Strežnika ni mogoče najti",
     "signIn": "Prijavite se",
     "unexpectedError": "Nepričakovana napaka",
     "upNext": "Naslednje",
     "username": "Uporabniško ime",
     "youMayAlsoLike": "",
-    "loginAs": "Prijavi se kot {name}",
     "links": {
         "readTheDocumentation": "Preberi dokumentacijo"
     },
@@ -48,7 +46,6 @@
     "criticRating": "Ocena kritikov",
     "connect": "Poveži",
     "collections": "Zbirke",
-    "changeServer": "Spremeni strežnik",
     "cancel": "Prekliči",
     "confirm": "Potrdi",
     "browserNotSupported": "Brskalnik ne podpira predvajanja te datoteke.",

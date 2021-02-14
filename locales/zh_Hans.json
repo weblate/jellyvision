@@ -37,7 +37,6 @@
     "present": "现在",
     "rating": "评价",
     "releaseDate": "发布日期",
-    "serverAddressMustBeUrl": "服务器地址必须是有效的 URL",
     "serverNotFound": "找不到服务器",
     "settings": {
         "apiKeys": {
@@ -128,7 +127,6 @@
     "collections": "收藏",
     "byArtist": "来自",
     "connect": "连接",
-    "changeServer": "更改服务器",
     "biography": "传记",
     "artists": "艺术家",
     "actors": "演员",
@@ -161,7 +159,6 @@
     "unableGetServerConfiguration": "无法获取服务器配置",
     "unableGetPublicUsers": "无法获取用户",
     "type": "类型",
-    "thumb": "赞",
     "tags": "标签",
     "tagline": "标语",
     "sortTitle": "排序标题",
@@ -230,9 +227,6 @@
             "name": "设备",
             "description": "查看和管理连接到服务器的设备"
         },
-        "apiKeys": {
-            "description": "添加和撤消用于从外部访问服务器的 API 密钥"
-        },
         "account": {
             "name": "账户",
             "description": "编辑您的用户信息"
@@ -253,7 +247,6 @@
     "operatingSystem": "操作系统",
     "metadataNoResultsMatching": "没有与“{search}”匹配的结果。按回车键来创建一个新的。",
     "menu": "菜单",
-    "logo": "图标",
     "links": {
         "reportAnIssue": "报告 Vue 客户端的问题",
         "readTheDocumentation": "阅读文档",
@@ -280,7 +273,6 @@
     "communityRating": "社区评分",
     "castAndCrew": "演员表",
     "cancel": "取消",
-    "box": "方块",
     "backdrop": "背景",
     "architecture": "架构",
     "allLanguages": "全部语言",
