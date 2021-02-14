@@ -35,13 +35,10 @@
     "movies": "Films",
     "password": "Wachtwoord",
     "play": "Afspelen",
-    "playType": "Speel {mediaType}",
     "present": "Huidig",
     "rating": "Beoordeling",
     "releaseDate": "Publicatiedatum",
-    "serverAddress": "Server adres",
     "serverAddressMustBeUrl": "Server adres moet een geldige URL zijn",
-    "serverAddressRequired": "Server adres is verplicht",
     "serverNotFound": "Server niet gevonden",
     "settings": {
         "apiKeys": {
@@ -67,7 +64,6 @@
     "unexpectedError": "Onverwachte fout",
     "upNext": "Volgende",
     "username": "Gebruikersnaam",
-    "usernameRequired": "Gebruikersnaam is verplicht",
     "youMayAlsoLike": "Dit vind je misschien ook leuk",
     "genres": "Genres",
     "years": "Jaren",
@@ -78,7 +74,6 @@
     "specialFeatures": "Speciale Features",
     "trailer": "Trailer",
     "subtitles": "Ondertiteling",
-    "selectServer": "Selecteer server",
     "features": "Kenmerken",
     "dislikes": "Niet leuk",
     "likes": "Leuk",
@@ -93,20 +88,16 @@
     "serverVersionTooLow": "De server versie moet 10.7.0 of hoger zijn",
     "noNetworkConnection": "Geen netwerk verbinding",
     "connect": "Verbinden",
-    "changeServer": "Verander van server",
     "browserNotSupported": "Uw browser kan dit bestandstype niet afspelen.",
     "studios": "Studio's",
     "series": "Series",
-    "selectUser": "Selecteer een gebruiker",
     "noResultsFound": "Er is hier niets",
     "networks": "Netwerken",
     "name": "Naam",
     "moreLikeArtist": "Meer zoals {artiest}",
     "manualLogin": "Manuele login",
-    "loginAs": "Inloggen als {naam}",
     "filter": "Filter",
     "collections": "Collecties",
-    "changeUser": "Verander gebruiker",
     "biography": "Biografie",
     "artists": "Artiesten",
     "artist": "Artiest",
@@ -124,7 +115,6 @@
     "unliked": "Leuk gevonden ongedaan",
     "unableGetRelated": "Kan gerelateerde items niet ophalen",
     "sortByType": "Op {type}",
-    "shuffleAll": "Shuffle alles",
     "numberTracks": "{number} tracks",
     "nextUp": "Volgende",
     "liked": "Vind ik leuk",
@@ -136,12 +126,10 @@
         },
         "anErrorHappened": "Er is een fout opgetreden"
     },
-    "disc": "Schijf",
     "darkModeToggle": "Donkere modus",
     "buttons": {
         "ok": "Ok"
     },
-    "rememberMe": "Onthoud mij",
     "unableGetPublicUsers": "Gebruikers laden is mislukt",
     "unableGetServerConfiguration": "Serverconfiguratie laden is mislukt",
     "settingsSections": {
@@ -154,7 +142,6 @@
             "description": "Bekijk en beheer de apparaten die met jouw server verbonden zijn"
         },
         "apiKeys": {
-            "name": "API sleutels",
             "description": "Verwijder en voeg API sleutels toe voor externe toegang tot jouw server"
         },
         "account": {
@@ -219,15 +206,12 @@
         }
     },
     "serverVersion": "Server versie",
-    "serverDashboard": "Server dashboard",
     "server": "Server",
     "search": "Zoeken",
-    "screenshot": "Schermafdruk",
     "saved": "Opgeslagen",
     "save": "Opslaan",
     "role": "Rol",
     "producer": "Producent",
-    "primary": "Primair",
     "people": "Personen",
     "parentalRating": "Kijkwijzer classificatie",
     "overview": "Overzicht",
@@ -235,10 +219,8 @@
     "originalAspectRatio": "Originele aspect ratio",
     "operatingSystem": "Besturingssysteem",
     "metadataNoResultsMatching": "Geen resultaten komen overeen met \"{search}\". Druk op enter om een nieuwe aan te maken.",
-    "metadata": "Metadata",
     "menu": "Menu",
     "logsAndActivity": {
-        "noLogsFounr": "Geen logboeken gevonden",
         "noActivityFound": "Geen activiteiten gevonden",
         "failedGetActivity": "Kan de activiteit niet verkrijgen",
         "failedGetLogs": "Kan de logboeken niet verkrijgen",
@@ -246,7 +228,6 @@
         "activity": "Activiteit",
         "noLogsFound": "Geen logboeken gevonden"
     },
-    "logo": "Logo",
     "links": {
         "reportAnIssue": "Meld een probleem met de Vue client",
         "readTheDocumentation": "Lees de documentatie",
@@ -270,22 +251,17 @@
     "dateAdded": "Datum toegevoegd",
     "customRating": "Aangepaste beoordeling",
     "criticRating": "Critici-beoordeling",
-    "composer": "Componist",
     "communityRating": "Community-beoordeling",
     "castAndCrew": "Acteurs & Medewerkers",
     "cancel": "Annuleren",
-    "boxRear": "Hoes (achterkant)",
     "box": "Hoes",
-    "banner": "Banner",
     "backdrop": "Achtergrond",
     "audio": "Geluid",
-    "art": "Afbeeldingen",
     "architecture": "Architectuur",
     "allLanguages": "Alle talen",
     "addNewPerson": "Voeg een nieuw persoon toe",
     "actor": "Acteur",
     "3DFormat": "3D formaat",
-    "thumb": "Icoon",
     "homeHeader": {
         "items": {
             "recentlyAdded": "Recent toegevoegd"
@@ -302,7 +278,6 @@
     "video": "Video",
     "undefined": "Ongedefinieerd",
     "type": "Type",
-    "title": "Titel",
     "tags": "Labels",
     "tagline": "Slogan",
     "sortTitle": "Sorteer de titel",
@@ -313,7 +288,6 @@
     "refreshLibrary": "Vernieuw bibliotheek",
     "queue": "Wachtrij",
     "noSubtitleSelected": "Geen ondertiteling geselecteerd",
-    "noSubtitleAvailable": "Geen ondertiteling beschikbaar",
     "libraryRefreshQueued": "Bibliotheek vernieuwen in wachtrij geplaatst",
     "fullScreen": "Volledig scherm",
     "directing": "Regisseren",
@@ -342,7 +316,6 @@
         "switchToDarkMode": "Schakel over naar de donkere modus",
         "changeLanguage": "Taal"
     },
-    "stopPlayback": "Stop afspelen",
     "person": "Persoon",
     "noImagesFound": "Geen afbeeldingen gevonden",
     "metadataEditor": "Metagegevens bewerker",

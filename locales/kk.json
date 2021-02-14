@@ -2,7 +2,6 @@
     "alphabetically": "Älıpbi boiynşa",
     "badRequest": "Jaramsyz saual. Ärekettı qaitalaŋyz",
     "browserNotSupported": "Būl faildy oinatu üşın şolğyşyŋyz qoldau körsetpeidі.",
-    "changeServer": "Serverdi aýystyrý",
     "connect": "Qosylu",
     "continueListening": "Tyŋdaudy jalğastyru",
     "continueWatching": "Qaraudy jalğastyru",
@@ -39,13 +38,10 @@
     "noNetworkConnection": "Jelılık bailanys joq",
     "password": "Paröl",
     "play": "Oinatu",
-    "playType": "",
     "present": "Ağymda",
     "rating": "Bağalau",
     "releaseDate": "Şyğaru künı",
-    "serverAddress": "Server mekenjaıy",
     "serverAddressMustBeUrl": "Server mekenjaıynda jaramdy URL qajet",
-    "serverAddressRequired": "Server mekenjaıy qajet",
     "serverNotFound": "Server tabylmady",
     "serverVersionTooLow": "Server nusqasy 10.7.0 ne odan joǵary qajet",
     "settings": {
@@ -98,7 +94,6 @@
     "unhandledException": "Öŋdelmeitın qiys",
     "upNext": "Kezektı",
     "username": "Paidalanuşy aty",
-    "usernameRequired": "Paıdalanýshy aty qajet",
     "filtersNotFound": "Süzgılerdı jükteu mümkın emes",
     "status": "Küi",
     "played": "Oinatylğan",
@@ -108,7 +103,6 @@
     "likes": "Ūnatular",
     "dislikes": "Ūnatpaular",
     "features": "Materialdar",
-    "selectServer": "Serverdi tańdaý",
     "subtitles": "Subtitrler",
     "trailer": "Treiler",
     "specialFeatures": "Arnaiylar",
@@ -120,7 +114,6 @@
     "years": "Jyldar",
     "studios": "Studialar",
     "series": "Telehikaia",
-    "selectUser": "Paıdalanýshyny tańdaý",
     "networks": "Jelıler",
     "name": "Aty",
     "manualLogin": "Qolmen kirý",
@@ -129,7 +122,6 @@
     "artist": "Oryndauşy",
     "albums": "Älbomdar",
     "sortByType": "{type} boiynşa",
-    "shuffleAll": "Bárin aralastyrý",
     "settingsSections": {
         "users": {
             "name": "Paidalanuşylar",
@@ -188,7 +180,6 @@
             "description": "Paıdalanuşy mälımetterın öŋdeu"
         },
         "apiKeys": {
-            "name": "API-kiltter",
             "description": "Serverge syrttan qatynaý úshin API-kіltterіn qosý jáne joıý"
         },
         "transcodingAndStreaming": {
@@ -206,13 +197,11 @@
     },
     "serverVersion": "Server nūsqasy",
     "server": "Server",
-    "rememberMe": "Este saqtaý",
     "operatingSystem": "Operasialyq jüie",
     "numberTracks": "{number} jolşyq",
     "noResultsFound": "Mūnda eşteŋe joq",
     "nextUp": "Kezektı",
     "moreLikeArtist": "{artist} siaqty ūqsastar",
-    "logs": "Jurnaldar",
     "liked": "Ūnaidy",
     "libraries": "Tasyğyşhanalar",
     "latestLibrary": "Eŋ keiıngı {libraryName}",
@@ -225,9 +214,7 @@
         },
         "anErrorHappened": "Qate oryn aldy"
     },
-    "disc": "Dıskı",
     "darkModeToggle": "Qaraŋğy rejımdı qosu",
-    "changeUser": "Paıdalanýshyny aýystyrý",
     "byArtist": "-",
     "buttons": {
         "ok": "Jaraidy"
@@ -235,7 +222,6 @@
     "biography": "Ömırbaiany",
     "architecture": "Arhitekturasy",
     "actors": "Aktörler",
-    "activity": "Áreketter",
     "unableGetPublicUsers": "Paidalanuşylardy alu mümkın emes",
     "links": {
         "poweredByJellyfin": "Būl server Jellyfin arqyly ısteidı",
@@ -257,27 +243,21 @@
     },
     "unliked": "Ūnamaidy",
     "type": "Türı",
-    "title": "Atauy",
     "thumb": "Nobai",
     "tags": "Tegter",
     "tagline": "Ūrany",
     "sortTitle": "Sūryptau atauy",
-    "serverDashboard": "Server taqtasy",
     "search": "İzdeu",
-    "screenshot": "Ekran suretı",
     "saved": "Saqtalğan",
     "save": "Saqtau",
     "role": "Rölı",
     "producer": "Prodüser",
-    "primary": "Negızgı",
     "people": "Adamdar",
     "parentalRating": "Jastas sanaty",
     "overview": "Jalpy şolu",
     "originalTitle": "Bastapqy atauy",
     "originalAspectRatio": "Bastapqy pışımdık araqatynasy",
-    "metadata": "Metaderekter",
     "menu": "Mäzır",
-    "logo": "Logotip",
     "loginAs": "{name} atymen kirý",
     "images": "Suretter",
     "headerPaths": "Joly",
@@ -291,15 +271,11 @@
     "director": "Rejisör",
     "dateAdded": "Üstelgen künı",
     "criticRating": "Synşylar bağalauy",
-    "composer": "Kompozitor",
     "communityRating": "Qauym bağalauy",
     "castAndCrew": "Röldegıler men qyzmetkerler",
     "cancel": "Boldyrmau",
-    "boxRear": "Qorap arty",
     "box": "Qorap",
-    "banner": "Baner",
     "backdrop": "Artqy suret",
-    "art": "Oiu suret",
     "allLanguages": "Barlyq tılder",
     "addNewPerson": "Jaŋa tūlğany üsteu",
     "actor": "Aktör",
@@ -310,7 +286,6 @@
     "video": "Beine",
     "unableGetServerConfiguration": "Server teŋşelımderın alu mümkın emes",
     "logsAndActivity": {
-        "noLogsFounr": "Jurnaldar tabylmady",
         "noActivityFound": "Äreketter tabylmady",
         "failedGetActivity": "Äreketterdı alu mümkın emes",
         "failedGetLogs": "Jūrnaldardy alu mümkın emes",
@@ -337,7 +312,6 @@
     "unableToRefreshLibrary": "Tasyğyşhanany jaŋğyrtu mümkın emes",
     "tvShowAbbrev": "S{seasonNumber} E{episodeNumber}",
     "tooltips": {
-        "toggleDarkMode": "Qarańǵy rejimdi qosý",
         "changeLanguage": "Tılı",
         "switchToLightMode": "Jaryq rejımge auysu",
         "switchToDarkMode": "Qaraŋğy rejımge auysu"
@@ -345,7 +319,6 @@
     "refreshLibrary": "Tasyğyşhanany jaŋğyrtu",
     "queue": "Kezek",
     "noSubtitleSelected": "Subtitrler taŋdalmağan",
-    "noSubtitleAvailable": "Sýbtıtrler qoljetimsiz",
     "metadataEditor": "Metaderekter öŋdegışı",
     "libraryRefreshQueued": "Tasyğyşhana jaŋğyrtu kezekte",
     "fullScreen": "Tolyq ekran",
@@ -371,7 +344,6 @@
         "setAdminError": "Äkımşılık tırkelgını jasau mümkın emes."
     },
     "upNextName": "Kezektı: {upNextItemName}",
-    "stopPlayback": "Oınatýdy toqtatý",
     "person": "Tūlğa",
     "noVideoTrackSelected": "Dybys jolşyğy taŋdalmağan",
     "noAudioTrackSelected": "Subtitrler taŋdalmağan",
@@ -426,6 +398,5 @@
         "banner": "Baner",
         "backdrop": "Artqy suret",
         "art": "Oiu suret"
-    },
-    "about": "Qoldanba turaly"
+    }
 }

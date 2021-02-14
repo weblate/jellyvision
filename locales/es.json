@@ -33,9 +33,7 @@
     "moreLikeThis": "Similar a esto",
     "play": "Reproducir",
     "present": "Actualidad",
-    "serverAddressMustBeUrl": "La dirección introducida debe ser válida",
     "serverAddressRequired": "Se requiere dirección del servidor",
-    "serverNotFound": "No se ha podido encontrar el servidor",
     "settings": {
         "apiKeys": {
             "accessToken": "Token de acceso",
@@ -81,11 +79,9 @@
         }
     },
     "unexpectedError": "Error desconocido",
-    "usernameRequired": "Se requiere nombre de usuario",
     "serverAddress": "Dirección del servidor",
     "username": "Nombre de usuario",
     "password": "Contraseña",
-    "playType": "Reproducir {mediaType}",
     "signIn": "Iniciar sesión",
     "upNext": "A continuación",
     "libraryNotFound": "Biblioteca no encontrada",
@@ -116,12 +112,9 @@
     "themeSong": "Tema Musical",
     "resumable": "Se puede continuar",
     "unplayed": "No reproducido",
-    "selectServer": "Seleccionar servidor",
     "moreLikeArtist": "Más como {artist}",
-    "disc": "Disco",
     "byArtist": "Por",
     "connect": "Conectar",
-    "changeServer": "Cambiar servidor",
     "biography": "Biografía",
     "artist": "Artista",
     "albums": "Álbumes",
@@ -136,16 +129,13 @@
     "collections": "Colecciones",
     "artists": "Artistas",
     "actors": "Actores",
-    "selectUser": "Seleccionar un usuario",
     "manualLogin": "Inicio de sesión manual",
-    "loginAs": "Iniciar sesión como {name}",
     "changeUser": "Cambiar de usuario",
     "validation": {
         "required": "Este campo es obligatorio",
         "mustBeUrl": "Este campo debe ser una URL válida",
         "bothPasswordsSame": "Ambas contraseñas deben ser iguales"
     },
-    "shuffleAll": "Mezclar todo",
     "libraries": "Bibliotecas",
     "errors": {
         "messages": {
@@ -179,7 +169,6 @@
     "unableGetRelated": "Error al cargar los elementos relacionados",
     "unableGetPublicUsers": "Error al cargar los usuarios",
     "type": "Tipo",
-    "title": "Título",
     "tags": "Etiquetas",
     "tagline": "Eslogan",
     "settingsSections": {
@@ -240,7 +229,6 @@
             "description": "Edita la información de tu cuenta"
         },
         "apiKeys": {
-            "name": "Claves API",
             "description": "Añade y elimina claves API para acceso externo a tu servidor"
         },
         "networking": {
@@ -261,17 +249,14 @@
     "saved": "Guardado",
     "save": "Guardar",
     "role": "Rol",
-    "rememberMe": "Recordarme",
     "producer": "Productor",
     "people": "Gente",
     "parentalRating": "Calificación por edades",
     "originalTitle": "Título original",
     "originalAspectRatio": "Relación de aspecto original",
     "operatingSystem": "Sistema operativo",
-    "metadata": "Etiquetas",
     "menu": "Menú",
     "logsAndActivity": {
-        "noLogsFounr": "No hay registros",
         "noActivityFound": "No hay eventos registrados",
         "failedGetActivity": "Error al obtener los eventos",
         "failedGetLogs": "Error al obtener los registros",
@@ -279,7 +264,6 @@
         "activity": "Actividad",
         "noLogsFound": "No hay registros"
     },
-    "logo": "Logo",
     "links": {
         "reportAnIssue": "Reportar un error en el cliente Vue",
         "readTheDocumentation": "Ver la documentación",
@@ -301,14 +285,12 @@
     "details": "Detalles",
     "customRating": "Valoración personal",
     "criticRating": "Valoración de la crítica",
-    "composer": "Compositor",
     "architecture": "Arquitectura",
     "allLanguages": "Todos los idiomas",
     "addNewPerson": "Añadir una persona",
     "actor": "Actor",
     "3DFormat": "Formato 3D",
     "server": "Servidor",
-    "screenshot": "Captura de pantalla",
     "overview": "Resumen",
     "numberTracks": "{number} pistas",
     "nextUp": "Siguiente",
@@ -317,33 +299,25 @@
     "communityRating": "Puntuación de la comunidad",
     "castAndCrew": "Reparto",
     "cancel": "Cancelar",
-    "box": "Caja",
     "audio": "Audio",
-    "art": "Arte",
     "video": "Vídeo",
     "sortTitle": "Ordenar título",
-    "primary": "Primario",
     "banner": "Banner",
-    "backdrop": "Fondo",
     "version": "Versión",
     "unableToRefreshLibrary": "No se pudo actualizar la biblioteca",
     "tvShowAbbrev": "T{seasonNumber} E{episodeNumber}",
     "tooltips": {
-        "toggleDarkMode": "Activar modo oscuro",
         "changeLanguage": "Idioma",
         "switchToLightMode": "Cambiar al tema claro",
         "switchToDarkMode": "Cambiar al tema oscuro"
     },
-    "serverDashboard": "Panel del servidor",
     "refreshLibrary": "Escanear biblioteca",
     "queue": "Cola",
     "noSubtitleSelected": "Ningún subtítulo seleccionado",
-    "noSubtitleAvailable": "No hay subtítulos disponibles",
     "metadataEditor": "Editor de etiquetas",
     "libraryRefreshQueued": "Escaneo de biblioteca puesto en cola",
     "fullScreen": "Pantalla completa",
     "upNextName": "A continuación: {upNextItemName}",
-    "thumb": "Miniatura",
     "stopPlayback": "Detener la reproducción",
     "dateAdded": "Añadido el",
     "noImagesFound": "No se han encontrado imágenes",
@@ -378,7 +352,6 @@
     "unliked": "No me gusta",
     "noAudioTrackSelected": "No se ha seleccionado pista de audio",
     "directing": "Dirige",
-    "boxRear": "Carátula (cara trasera)",
     "resume": "Continuar",
     "unableToToggleLike": "Ha habido un error al cambiar el estado del 'Me gusta' de este elemento",
     "playback": {
@@ -424,6 +397,5 @@
         "menu": "Menú",
         "banner": "Banner",
         "art": "Arte"
-    },
-    "about": "Información"
+    }
 }

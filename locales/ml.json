@@ -7,15 +7,11 @@
     "allLanguages": "എല്ലാ ഭാഷകളും",
     "alphabetically": "അക്ഷരമാലാക്രമത്തിൽ",
     "architecture": "വാസ്തുവിദ്യ",
-    "art": "കല",
     "artist": "ആർട്ടിസ്റ്റ്",
     "artists": "കലാകാരന്മാർ",
     "audio": "ഓഡിയോ",
-    "backdrop": "പശ്ചാത്തലം",
     "badRequest": "മോശം അഭ്യർത്ഥന. വീണ്ടും ശ്രമിക്ക്",
-    "banner": "ബാനർ",
     "biography": "ജീവചരിത്രം",
-    "box": "പെട്ടി",
     "boxRear": "ബോക്സ് (പിൻ)",
     "browserNotSupported": "ഈ ഫയൽ പ്ലേ ചെയ്യുന്നതിന് നിങ്ങളുടെ ബ്ര browser സറിനെ പിന്തുണയ്ക്കുന്നില്ല.",
     "buttons": {
@@ -24,11 +20,9 @@
     "byArtist": "എഴുതിയത്",
     "cancel": "റദ്ദാക്കുക",
     "castAndCrew": "കാസ്റ്റ് & ക്രൂ",
-    "changeServer": "സെർവർ മാറ്റുക",
     "changeUser": "ഉപയോക്താവിനെ മാറ്റുക",
     "collections": "ശേഖരങ്ങൾ",
     "communityRating": "കമ്മ്യൂണിറ്റി റേറ്റിംഗ്",
-    "composer": "കമ്പോസർ",
     "connect": "ബന്ധിപ്പിക്കുക",
     "continueListening": "കേൾക്കുന്നത് തുടരുക",
     "continueWatching": "കാണുന്നത് തുടരുക",
@@ -39,7 +33,6 @@
     "details": "വിശദാംശങ്ങൾ",
     "directing": "സംവിധാനം",
     "director": "ഡയറക്ടർ",
-    "disc": "ഡിസ്ക്",
     "discNumber": "ഡിസ്ക് {discNumber}",
     "dislikes": "അനിഷ്‌ടങ്ങൾ",
     "edit": "എഡിറ്റുചെയ്യുക",
@@ -113,7 +106,6 @@
         "selectServer": "സെർവർ തിരഞ്ഞെടുക്കുക",
         "login": "ലോഗിൻ"
     },
-    "loginAs": "{name} ആയി പ്രവേശിക്കുക",
     "logo": "ലോഗോ",
     "logout": "ലോഗൗട്ട്",
     "logsAndActivity": {
@@ -122,12 +114,10 @@
         "failedGetLogs": "ലോഗുകൾ നേടാനായില്ല",
         "logs": "ലോഗുകൾ",
         "noActivityFound": "പ്രവർത്തനങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
-        "noLogsFounr": "ലോഗുകളൊന്നും കണ്ടെത്തിയില്ല",
         "noLogsFound": "ലോഗുകളൊന്നും കണ്ടെത്തിയില്ല"
     },
     "manualLogin": "സ്വമേധയാലുള്ള ലോഗിൻ",
     "menu": "മെനു",
-    "metadata": "മെറ്റാഡാറ്റ",
     "metadataNoResultsMatching": "\"{search}\" എന്നതുമായി പൊരുത്തപ്പെടുന്ന ഫലങ്ങളൊന്നുമില്ല. പുതിയതൊന്ന് സൃഷ്ടിക്കാൻ എന്റർ അമർത്തുക.",
     "more": "കൂടുതൽ",
     "moreLikeArtist": "{artist} പോലുള്ള കൂടുതൽ",
@@ -138,7 +128,6 @@
     "nextUp": "അടുത്തത്",
     "noNetworkConnection": "നെറ്റ്‌വർക്ക് കണക്ഷനൊന്നുമില്ല",
     "noResultsFound": "ഇവിടെ ഒന്നുമില്ല",
-    "noSubtitleAvailable": "ഉപശീർഷകമൊന്നും ലഭ്യമല്ല",
     "noSubtitleSelected": "ഉപശീർഷകമൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല",
     "numberTracks": "{number} ട്രാക്കുകൾ",
     "operatingSystem": "ഓപ്പറേറ്റിംഗ് സിസ്റ്റം",
@@ -152,27 +141,20 @@
     "play": "പ്ലേ ചെയ്യുക",
     "played": "കളിച്ചു",
     "present": "വർത്തമാന",
-    "primary": "പ്രാഥമികം",
     "producer": "നിർമ്മാതാവ്",
     "queue": "ക്യൂ",
     "rating": "റേറ്റിംഗ്",
     "releaseDate": "റിലീസ് തീയതി",
-    "rememberMe": "എന്നെ ഓർക്കണം",
     "resumable": "പുനരാരംഭിക്കാൻ കഴിയും",
     "role": "പങ്ക്",
     "save": "രക്ഷിക്കും",
     "saved": "സംരക്ഷിച്ചു",
-    "screenshot": "സ്ക്രീൻഷോട്ട്",
     "search": "തിരയുക",
-    "selectServer": "സെർവർ തിരഞ്ഞെടുക്കുക",
     "selectUser": "ഒരു ഉപയോക്താവിനെ തിരഞ്ഞെടുക്കുക",
     "series": "സീരീസ്",
     "server": "സെർവർ",
-    "serverAddress": "സെർവർ വിലാസം",
     "serverAddressMustBeUrl": "സെർവർ വിലാസം സാധുവായ ഒരു URL ആയിരിക്കണം",
-    "serverAddressRequired": "സെർവർ വിലാസം ആവശ്യമാണ്",
     "serverDashboard": "സെർവർ ഡാഷ്‌ബോർഡ്",
-    "serverNotFound": "സെർവർ കണ്ടെത്തിയില്ല",
     "serverVersion": "സെർവർ പതിപ്പ്",
     "serverVersionTooLow": "സെർവർ പതിപ്പ് 10.7.0 അല്ലെങ്കിൽ ഉയർന്നതായിരിക്കണം",
     "settings": {
@@ -225,7 +207,6 @@
             "name": "അക്കൗണ്ട്"
         },
         "apiKeys": {
-            "description": "നിങ്ങളുടെ സെർവറിലേക്കുള്ള ബാഹ്യ ആക്‌സസ്സിനായി API കീകൾ ചേർത്ത് അസാധുവാക്കുക",
             "name": "API കീകൾ"
         },
         "devices": {
@@ -294,7 +275,6 @@
         }
     },
     "shows": "ഷോകൾ",
-    "shuffleAll": "എല്ലാം ഇളക്കുക",
     "signIn": "സൈൻ ഇൻ",
     "sortByType": "{Type} പ്രകാരം",
     "sortTitle": "ശീർഷകം അടുക്കുക",
@@ -306,7 +286,6 @@
     "tags": "ടാഗുകൾ",
     "themeSong": "തീം സോംഗ്",
     "themeVideo": "തീം വീഡിയോ",
-    "thumb": "പെരുവിരൽ",
     "title": "ശീർഷകം",
     "trailer": "ട്രെയിലർ",
     "type": "തരം",
@@ -320,7 +299,6 @@
     "unplayed": "പ്ലേ ചെയ്തിട്ടില്ല",
     "upNext": "അടുത്തത്",
     "username": "ഉപയോക്തൃനാമം",
-    "usernameRequired": "ഉപയോക്തൃനാമം ആവശ്യമാണ്",
     "validation": {
         "mustBeUrl": "ഈ ഫീൽഡ് സാധുവായ ഒരു URL ആയിരിക്കണം",
         "required": "ഈ ഫീൽഡ് പൂരിപ്പിക്കേണ്ടതുണ്ട്",
@@ -339,7 +317,6 @@
     "tvShowAbbrev": "S {seasonNumber} E {episodeNumber}",
     "unableToRefreshLibrary": "ലൈബ്രറി പുതുക്കാൻ കഴിയില്ല",
     "tooltips": {
-        "toggleDarkMode": "ഇരുണ്ട മോഡ് ടോഗിൾ ചെയ്യുക",
         "changeLanguage": "ഭാഷ",
         "switchToLightMode": "ലൈറ്റ് മോഡിലേക്ക് മാറുക",
         "switchToDarkMode": "ഇരുണ്ട മോഡിലേക്ക് മാറുക"
@@ -348,7 +325,6 @@
     "metadataEditor": "മെറ്റാഡാറ്റ എഡിറ്റർ",
     "libraryRefreshQueued": "ലൈബ്രറി പുതുക്കൽ ക്യൂവിലാണ്",
     "noImagesFound": "ചിത്രങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
-    "stopPlayback": "പ്ലേബാക്ക് നിർത്തുക",
     "upNextName": "അടുത്തത്: {upNextItemName}",
     "person": "വ്യക്തി",
     "wizard": {
@@ -427,6 +403,5 @@
         "banner": "ബാനർ",
         "backdrop": "പശ്ചാത്തലം",
         "art": "കല"
-    },
-    "about": "കുറിച്ച്"
+    }
 }

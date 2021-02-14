@@ -35,13 +35,10 @@
     "movies": "Filmy",
     "password": "Hasło",
     "play": "Odtwarzaj",
-    "playType": "Odtwarzaj {mediaType}",
     "present": "Teraz",
     "rating": "Ocena",
     "releaseDate": "Data wydania",
-    "serverAddress": "Adres serwera",
     "serverAddressMustBeUrl": "Adres serwera musi być prawidłowym adresem URL",
-    "serverAddressRequired": "Adres serwera jest wymagany",
     "serverNotFound": "Serwer nie został znaleziony",
     "settings": {
         "apiKeys": {
@@ -91,7 +88,6 @@
     "unexpectedError": "Niespodziewany błąd",
     "upNext": "Następnie",
     "username": "Nazwa użytkownika",
-    "usernameRequired": "Nazwa użytkownika jest wymagana",
     "youMayAlsoLike": "Może ci się spodobać",
     "shows": "Seriale",
     "years": "Lata",
@@ -142,7 +138,6 @@
             "name": "Dziennik zdarzeń i aktywność"
         },
         "apiKeys": {
-            "description": "Dodawaj i usuwaj klucze API do zewnętrznego dostępu do serwera",
             "name": "Klucze API"
         },
         "account": {
@@ -217,7 +212,6 @@
     "tagline": "Slogan",
     "sortTitle": "Sortuj po tytule",
     "sortByType": "Według {type}",
-    "shuffleAll": "Losuj",
     "metadataNoResultsMatching": "Nie znaleziono wyników dla \"{search}\". Wciśnij enter by spróbować jeszcze raz.",
     "year": "Rok",
     "writer": "Scenarzysta",
@@ -227,24 +221,18 @@
     "undefined": "Nieustalony",
     "unableGetServerConfiguration": "Nie udało się odczytać konfiguracji serwera",
     "type": "Typ",
-    "title": "Tytuł",
     "thumb": "Miniatura",
     "tags": "Znaczniki",
     "studios": "Wytwórnie",
     "serverVersion": "Wersja serwera",
-    "serverDashboard": "Kokpit serwera",
     "server": "Serwer",
     "series": "Seriale",
-    "selectUser": "Wybierz użytkownika",
     "selectServer": "Wybierz serwer",
     "search": "Szukaj",
-    "screenshot": "Zrzut ekranu",
     "saved": "Zapisano",
     "save": "Zapisz",
     "role": "Rola",
-    "rememberMe": "Zapamiętaj mnie",
     "producer": "Producent",
-    "primary": "Podstawowy",
     "people": "Osoby",
     "parentalRating": "Kategoria wiekowa",
     "overview": "Opis",
@@ -257,11 +245,9 @@
     "networks": "Sieci",
     "name": "Nazwa",
     "moreLikeArtist": "Podobne do {artist}",
-    "metadata": "Metadane",
     "menu": "Menu",
     "manualLogin": "Logowanie ręczne",
     "logsAndActivity": {
-        "noLogsFounr": "Nie znaleziono dziennika zdarzeń",
         "noActivityFound": "Nie znaleziono aktywności",
         "failedGetActivity": "Nie udało się odczytać aktywności",
         "failedGetLogs": "Nie udało się odczytać dziennika zdarzeń",
@@ -269,7 +255,6 @@
         "activity": "Aktywność",
         "noLogsFound": "Nie znaleziono dziennika zdarzeń"
     },
-    "logo": "Logo",
     "loginAs": "Zaloguj jako {name}",
     "liked": "Polubione",
     "libraries": "Biblioteki",
@@ -295,7 +280,6 @@
     "editMetadata": "Edytuj metadane",
     "edit": "Edycja",
     "discNumber": "Dysk {discNumber}",
-    "disc": "Dysk",
     "director": "Reżyser",
     "details": "Szczegóły",
     "dateAdded": "Data dodania",
@@ -303,10 +287,8 @@
     "customRating": "Własna ocena",
     "criticRating": "Ocena krytyków",
     "connect": "Połącz",
-    "composer": "Kompozytor",
     "communityRating": "Ocena społeczności",
     "collections": "Kolekcje",
-    "changeUser": "Zmień użytkownika",
     "changeServer": "Zmień serwer",
     "castAndCrew": "Obsada i ekipa",
     "cancel": "Anuluj",
@@ -314,15 +296,12 @@
     "buttons": {
         "ok": "Ok"
     },
-    "boxRear": "Pudełko (tył)",
     "box": "Pudełko",
     "biography": "Biografia",
-    "banner": "Baner",
     "backdrop": "Fototapeta",
     "audio": "Dźwięk",
     "artists": "Wykonawcy",
     "artist": "Wykonawca",
-    "art": "Przezrocze",
     "architecture": "Architektura",
     "allLanguages": "Wszystkie języki",
     "albums": "Albumy",
@@ -336,7 +315,6 @@
     "unableToRefreshLibrary": "Nie udało się odświeżyć biblioteki",
     "tvShowAbbrev": "S{seasonNumber} E{episodeNumber}",
     "tooltips": {
-        "toggleDarkMode": "Przełącz na ciemny motyw",
         "changeLanguage": "Język",
         "switchToLightMode": "Przełącz na tryb jasny",
         "switchToDarkMode": "Przełącz na tryb ciemny"
@@ -344,7 +322,6 @@
     "refreshLibrary": "Odśwież bibliotekę",
     "queue": "Kolejka",
     "noSubtitleSelected": "Nie wybrano napisów",
-    "noSubtitleAvailable": "Brak dostępnych napisów",
     "metadataEditor": "Edytor metadanych",
     "libraryRefreshQueued": "Odświeżenie biblioteki w kolejce",
     "fullScreen": "Pełny ekran",
@@ -368,7 +345,6 @@
         "confirmPassword": "Potwierdź hasło"
     },
     "upNextName": "Następnie: {upNextItemName}",
-    "stopPlayback": "Zatrzymaj odtwarzanie",
     "person": "Osoba",
     "noImagesFound": "Nie znaleziono obrazów",
     "noVideoTrackSelected": "Nie wybrano ścieżki wideo",
@@ -428,6 +404,5 @@
         "banner": "Baner",
         "backdrop": "Fototapeta",
         "art": "Przezrocze"
-    },
-    "about": "O"
+    }
 }
